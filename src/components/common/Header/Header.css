@@ -1,0 +1,24 @@
+.header-wrapper{
+    background-color: #393691;
+    padding: 10px 0;
+    
+}
+.nav-item-link>p{
+    color: white;
+}
+.nav-link>span{
+    color: black;
+}
+.nav-link>span:hover{
+    color: black;
+}
+.nav-dropdown-link > li >a{
+    color: white;
+}
+.nav-dropdown-link > li >a:hover{
+    color: white;
+}
+.logo-link img{
+    width: 120px;
+    margin-top: 20px;
+}
