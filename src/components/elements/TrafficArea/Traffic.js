@@ -10,7 +10,6 @@ const trafficArea = (props) => {
             <Container>
                 <Row>
                     <Col lg="7">
-                    
                     <div className="traffic-area-text-wrapper">
                     <span>Traffic</span>
                     <h3 class="title">Stage reporting with  50k queries.</h3>
@@ -18,16 +17,17 @@ const trafficArea = (props) => {
                     </div>
                     <Row>
                         {trafficItems.map((item,index)=>(
-                        <Col lg="6" md="6" key={index}>
+                        <Col lg="6" md="6" sm="12" key={index}>
                             
                             <div className="traffic-item-wrapper">
+                            <div className="traffic-item-icon-wrapper">
+                                    <span style={{marginRight:"5px"}}>{item.icon}</span>
+                                </div>
                                 <div className="traffic-item-text-wrapper">
                                     <h5>{item.title}</h5>
                                     <p>{item.description}</p>
                                 </div>
-                                <div className="traffic-item-icon-wrapper">
-                                    <span>{item.icon}</span>
-                                </div>
+                               
                             </div>
                            
                         </Col>
@@ -37,6 +37,11 @@ const trafficArea = (props) => {
                         </Col>
                     </Row>
                     </Col>
+                    <Col lg="5">
+                            <div className="traffic-tablet-image">
+                                <img src={trafficThumb} alt="trafficThumb"/>
+                            </div>
+                        </Col>
                 </Row>
                 </Container>
         </div>

@@ -3,7 +3,7 @@
 }
 .features-text-wrapper{
     padding-top: 200px;
-    text-align: right;
+    margin-left: 100px;
 }
 .features-text-wrapper a{
     text-decoration: none;
@@ -43,9 +43,6 @@
     background-color: #fff;
     color: #5653b1;
 }
-.flex-column{
-    align-items: flex-end;
-}
 .feature-icon{
     padding: 5px 5px 5px 7px;
     width: 35px;
@@ -60,4 +57,7 @@
     background: transparent;
     color: #5653b1;
 }
-
+.nav-link-wrapper .active{
+    border-right:2px solid #5653b1;
+    border-radius: 0px;
+}

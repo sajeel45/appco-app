@@ -29,7 +29,7 @@ const Blogs = (props) => {
                         </ul>
                         <h3><a href="#">{item.title}</a></h3>
                     </div>
-                    <Col className="text-center blog-button">
+                    <Col className="blog-button">
                     <a className="secondary-btn " href="#"><span className="m-1"><FaArrowRight /></span>Learn More</a>
                     </Col>
                 </div>

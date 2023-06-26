@@ -57,6 +57,7 @@
 .team-member-wrapper .team-member-image-wrapper ul li{
     margin: 0 3px;
     display: inline-block;
+    z-index: 25;
 }
 .team-member-wrapper .team-member-image-wrapper ul li a{
     display: inline-block;

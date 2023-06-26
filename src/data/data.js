@@ -24,58 +24,64 @@ const bannerItems = [
 const services = [
     {
         id:1,
-        title:"Supporting",
+        title:"Searching",
         description:"Mucker plastered bugger all mate morish are.",
-        icon:<FaHeadphones size="40px" color="white" />,
-        count:4
+        icon:<FaSearch size="40px" color="white"/>,
+        count:1
     },
     {
         id:2,
-        title:"Building",
-        description:"Mucker plastered bugger all mate morish are.",
-        icon:<FaLock size="40px" color="white"/>,
-        count:3
-    },
-    {
-        id:3,
         title:"Designing",
         description:"Mucker plastered bugger all mate morish are.",
         icon:<FaSmile size="40px" color="white"/>,
         count:2,
     },
     {
-        id:4,
-        title:"Searching",
+        id:3,
+        title:"Building",
         description:"Mucker plastered bugger all mate morish are.",
-        icon:<FaSearch size="40px" color="white"/>,
-        count:1
-    }
+        icon:<FaLock size="40px" color="white"/>,
+        count:3
+    },
+    {
+        id:4,
+        title:"Supporting",
+        description:"Mucker plastered bugger all mate morish are.",
+        icon:<FaHeadphones size="40px" color="white" />,
+        count:4
+    },
+    
+    
+    
 ];
 const trafficItems = [
     {
         id:1,
-        title:"Choose a App",
-        description:"Mucker plastered bugger all mate morish are.",
-        icon:<FaCheck color="white"/>
-    },
-    {
-        id:2,
         title:"Carefully Designed",
         description:"Mucker plastered bugger all mate morish are.",
         icon:<FaCheck color="white"/>
     },
     {
-        id:3,
-        title:"User Interactive",
+        id:2,
+        title:"Choose a App",
         description:"Mucker plastered bugger all mate morish are.",
         icon:<FaCheck color="white"/>
     },
     {
-        id:4,
+        id:3,
         title:"Seamless Sync",
         description:"Mucker plastered bugger all mate morish are.",
         icon:<FaCheck color="white"/>
-    }
+    },
+    
+    
+    {
+        id:4,
+        title:"User Interactive",
+        description:"Mucker plastered bugger all mate morish are.",
+        icon:<FaCheck color="white"/>
+    },
+    
 ];
 const feedbacks = [
     {
@@ -148,6 +154,70 @@ const blogs = [
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
     }
+];
+const packages = [
+    {
+        id:1,
+        title:"Fresh",
+        price:4,
+        description:"Get your 14 day free trial",
+    },
+    {
+        id:2,
+        title:"Sweet",
+        price:16,
+        description:"Billed $276 per website annually.",
+    },
+    {
+        id:3,
+        title:"Juicy",
+        price:27,
+        description:"Billed $276 per website annually.",
+    },
+];
+const packagesFeatures = [
+    {
+        id:1,
+        features:[
+        
+               "60-day chat history",
+              "15 GB cloud storage"
+        ]
+    },
+    {
+        id:2,
+        features:[
+            "60-day chat history","50 GB cloud storage","24/7 Support"
+        ]
+    },
+    {
+        id:3,
+        features:[
+            "60-day chat history","Data security","100 GB cloud storage","24/7 Support"
+        ]
+    }
+]
+const questions = [
+    {
+        id:1,
+        question:"Where do I usually find FAQs in a page?",
+        answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
+    },
+    {
+        id:2,
+        question:"Where do I usually find FAQs in a page?",
+        answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
+    },
+    {
+        id:3,
+        question:"Where do I usually find FAQs in a page?",
+        answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
+    },
+    {
+        id:4,
+        question:"Where do I usually find FAQs in a page?",
+        answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
+    },
 ]
 
-export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs}; 
+export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,packages,questions,packagesFeatures}; 

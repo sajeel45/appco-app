@@ -2,6 +2,9 @@
     font-weight: 500;
     font-size: 24px;
 }
+.blogs-wrapper{
+    padding: 50px 0;
+}
 .blog-wrapper{
     padding: 20px 0;
     border-radius: 6px;
@@ -12,7 +15,6 @@
 
 }
 .blog-content-wrapper{
-    text-align: right;
     padding: 10px 0;
 }
 .blog-content-wrapper a{
@@ -37,16 +39,18 @@
 .blog-wrapper a.secondary-btn:hover{
     background: transparent;
     color: #393691;
+    border: 0px;
 }
 .blog-button a{
     padding: 5px;
+    border: 0px;
 }
 .list{
     order: 1;
     margin-left: auto;
     list-style: none;
     display: flex;
-    align-self: flex-end;
+    padding: 0;
 }
 .list li {
     margin-left: 10px;
