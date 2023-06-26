@@ -1,0 +1,48 @@
+.traffic-area-wrapper{
+    background-color: #EEF1F6;
+    padding: 50px 0;
+}
+.traffic-area-text-wrapper span{
+    color: #5653b1;
+}
+.traffic-area-text-wrapper{
+    text-align: right;
+    margin-bottom: 50px;
+}
+.title{
+    font-weight: 700;
+    font-size: 30px;
+}
+.traffic-item-text-wrapper{
+    text-align: right;
+}
+.traffic-item-text-wrapper h5{
+    font-weight: 700;
+}
+.traffic-item-icon-wrapper span{
+    background-color:#5653b1;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 10px 0px rgba(16, 73, 189, 0.3);
+
+}
+.traffic-item-wrapper{
+    display: flex;
+    padding: 0px 20px;
+}
+.traffic-item-icon-wrapper{
+    margin-left: 20px;
+}
+.secondary-btn{
+    background: transparent;
+    color: #0e1133;
+    border: 2px solid #e7eaef;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.4s ease-out 0s;
+}
+.secondary-btn:hover{
+    background-color: #5653b1;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.feedback-wrapper{
+    margin-top: 100px;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 25px 0;
+}
+.user-image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-content-wrapper{
+    color: white;
+    text-align: center;
+}
+.date-styling{
+    display: inline-block;
+    color: rgb(160, 158, 158);
+}

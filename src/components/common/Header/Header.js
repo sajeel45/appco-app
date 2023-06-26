@@ -11,12 +11,12 @@ const Header = () => {
     <div className="header-wrapper">
       <Container>
         <Row>
-          <Col sm="12" lg="4" md="4">
+          <Col sm="12" lg="4" md="6">
             <a to="#" className="logo-link">
               <img src={logo} alt="logo" className="img-fluid mt-20" />
             </a>
           </Col>
-          <Col className="header-nav-wrapper" md="8" sm="6" lg="8">
+          <Col className="header-nav-wrapper" md="6" sm="6" lg="8">
             <div className="nav-items-wrapper">
               <Navbar expand="lg" variant="dark">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

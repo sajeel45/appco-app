@@ -4,13 +4,36 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    position: absolute;
+    
     width: 100%;
 }
 .banner-text-wrap{
     padding: 150px 0;
     
 }
-.banner-upper-text-wrapper{
+.banner-upper-text-wrapper h4{
     border-top: 2px solid #393691;
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin: 0 0 24px;
+    display: inline-block;
+    color: #232323;
+}
+.banner-bottom-text-wrapper h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner-bottom-text-wrapper p{
+    font-size: 20px;
+    margin: 25px 0 35px;
+}
+.bannerItem-wrapper{
+    max-width: 100%;
+}
+.slick-slide .bannerItem-wrapper .bannerImage-wrapper img{
+    max-width: 100%;
+}
+.bannerImage-wrapper img{
+    width: 550px!important;
+    height: 100%;
 }
