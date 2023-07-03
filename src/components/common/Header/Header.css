@@ -23,6 +23,17 @@
 .nav-dropdown-link > li >a:hover{
     color: black;
 }
+.nav-dropdown-link li .nav-link {
+    /* Define the styles for the link title */
+    /* For example, you can set the initial background color and transition properties */
+    transition: all 3s ease-out .3s;
+  }
+.nav-dropdown-link li:hover .dropdown-menu {
+    /* Define the styles for the dropdown menu when hovering over the link title */
+    /* For example, you can change the display and visibility properties */
+    display: block;
+    visibility: visible;
+  }
 .logo-link img{
     width: 120px;
     margin-top: 20px;

@@ -9,7 +9,7 @@ import Blogs from "../Blogs/Blogs";
 import Packages from "../Packages/Packages";
 import Questions from "../Questions/Questions";
 import Project from "../ProjectArea/project";
-import Footer from "../Footer/Footer";
+import Footer from "../../common/Footer/Footer";
 
 const Home1 = () => {
     return(
@@ -24,7 +24,6 @@ const Home1 = () => {
             <Questions questions={questions}/>
             <Blogs blogs={blogs}/>
             <Project />
-            <Footer helpLinks={helpLinks}/>
         </div>
     )
 }

@@ -37,79 +37,47 @@ const Header = () => {
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavLink href="#" className="nav-item-link">
-                        <p>
-                      About
-                      </p>
+                      <p>About</p>
                     </NavLink>
                     <NavLink href="#" className="nav-item-link">
-                       <p>
-                      Features
-                      </p>
+                      <p>Features</p>
                     </NavLink>
                     <NavLink href="#" className="nav-item-link">
-                       <p>
-                      Pricing
-                      </p>
-                      
+                      <p>Pricing</p>
                     </NavLink>
-                    <NavLink href="#" className="nav-item-link">
-                        <p>
-                      Screenshots
-                      </p>
-                    </NavLink>
-                    <NavDropdown title="Pages"  as="li" id="basic-nav-dropdown">
+                    <NavDropdown title="Pages" as="li" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#Page1" className="nav-link">
-                        <span>
-                        Page 1
-                        </span>
+                        <span>Page 1</span>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#Page2" className="nav-link">
-                        <span>
-                        Page 2
-                        </span>
+                        <span>Page 2</span>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#Page3" className="nav-link">
-                        <span>
-                        Page 3
-                        </span>
+                        <span>Page 3</span>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#Page4" className="nav-link">
-                        <span>
-                        Page 4
-                        </span>
+                        <span>Page 4</span>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#Page5" className="nav-link">
-                        <span>
-                        Page 5
-                        </span>
+                        <span>Page 5</span>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Blogs" as="li" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#blog1" className="nav-link">
-                        <span>
-                        Blog Grid
-                        </span>
+                        <span>Blog Grid</span>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#Page2" className="nav-link">
-                        <span>
-                        Blog Left Sidebar
-                        </span>
+                        <span>Blog Left Sidebar</span>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#Page3" className="nav-link">
-                        <span>
-                        Blog Right Sidebar
-                        </span>
+                        <span>Blog Right Sidebar</span>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavLink href="#" className="nav-item-link">
-                        <p>
-                      Team
-                      </p>
+                      <p>Team</p>
                     </NavLink>
                     <NavLink href="#" className="nav-item-link">
-                        <p>
-                      Contact
-                      </p>
+                      <p>Contact</p>
                     </NavLink>
                   </Nav>
                 </Navbar.Collapse>

@@ -73,24 +73,20 @@ const footer = (props) => {
                     <p>
                       <b>Phone:</b>
                       +8 91230 456 789
-                    </p>
-                  </div>
-                  <div className="fax-wrapper">
-                    <p>
+                      <p>
                       <b>Fax:</b>
                       +8 91230 456 789
+                    </p>
                     </p>
                   </div>
                   <div className="email-wrapper">
                     <p>
                       <b>Email:</b>
                       example@mail.com
-                    </p>
-                  </div>
-                  <div className="website-wrapper">
-                    <p>
+                      <p>
                       <b>Website:</b>
                       yourwebsite.com
+                    </p>
                     </p>
                   </div>
                 </div>
