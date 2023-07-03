@@ -1,4 +1,5 @@
-import bannerbg from "../../../assets/Banner/slider-bg.jpg";
+import heroThumb from "../../../assets/Banner/hero-thumb-1.png";
+import heroThumb2 from "../../../assets/Banner/hero-thumb-2.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,9 +17,9 @@ const Banner = (props) =>{
       };
       const bannerImages = props.bannerItems;
     return(
-        <div className="banner-wrapper" style={{backgroundImage:`url(${bannerbg})`}}>
+        <div className="banner-wrapper">
             <Container>
-                <Row>
+                <Row className="align-items-center">
                     <Col lg="8" md="6" sm="6">
                         <div className="banner-text-wrap">
                             <div className="banner-upper-text-wrapper">
@@ -34,16 +35,13 @@ const Banner = (props) =>{
                         </div>
                     </Col>
                     <Col lg="4" md="6" sm="6">
-                        <div className="banner-slider-wrapper">
-                            <Slider {...settings}>
-                                {bannerImages.map((item,index)=>(
-                                <div className="bannerItem-wrapper" key={index}>
-                                    <div className="bannerImage-wrapper">
-                                        <img src={item.src} alt="bannerImage"/>
-                                    </div>
-                                </div>
-                                ))}
-                            </Slider>
+                        <div className="hero-thumbs-wrapper">
+                        <div className="hero-thumb">
+                            <img src={heroThumb} alt="heroThumb"/>
+                        </div>
+                        <div className="hero-thumb-2">
+                            <img src={heroThumb2} alt="heroThumb2"/>
+                        </div>
                         </div>
                     </Col>
                 </Row>

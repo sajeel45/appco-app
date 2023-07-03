@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo/header-logo.png";
+import logo from "../../../assets/logo/logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -18,7 +18,7 @@ const Header = () => {
           </Col>
           <Col className="header-nav-wrapper" md="6" sm="6" lg="8">
             <div className="nav-items-wrapper">
-              <Navbar expand="lg" variant="dark">
+              <Navbar expand="lg" variant="light">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto nav-dropdown-link">

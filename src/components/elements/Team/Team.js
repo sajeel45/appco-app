@@ -1,5 +1,7 @@
 import { Container,Row,Col } from "react-bootstrap";
-import {FaArrowRight,FaFacebook,FaPinterest,FaTwitter} from "react-icons/fa";
+import {FaArrowRight,FaFacebook,FaLinkedin,FaTwitter} from "react-icons/fa";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 import "./Team.css"
 
 const Team = (props) => {
@@ -16,24 +18,30 @@ const Team = (props) => {
                     </Col>
                     {teamMembers.map((item,index)=>(
                     <Col lg="3" md="6" sm="12">
+                        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true">
                         <div className="team-member-wrapper" key={index}>
                             <div className="team-member-image-wrapper">
                                 <img src={item.src} alt="teamMember"/>
-                                <ul>
-                                    <li><a href="#"><FaPinterest color="black"/></a></li>
-                                    <li><a href="#"><FaTwitter color="black"/></a></li>
-                                    <li><a href="#"><FaFacebook color="black"/></a></li>
-                                </ul>
                             </div>
                             <div className="team-member-content-wrapper text-center pt-3">
                                 <h5>{item.name}</h5>
                                 <span>{item.designation}</span>
+                                <div className="team-member-social-links pt-3 pb-3">
+                                <ul>
+                                    <li><a href="#"><FaLinkedin color="white"/></a></li>
+                                    <li><a href="#"><FaTwitter color="white"/></a></li>
+                                    <li><a href="#"><FaFacebook color="white"/></a></li>
+                                </ul>
+                                </div>
                             </div>
                         </div>
+                        </AnimationOnScroll>
                     </Col>
                     ))}
                     <Col className="text-center">
-                    <a className="secondary-btn  mt-50" href="#"><span className="m-1"><FaArrowRight /></span>View all Members</a>
+                        <div className="team-button-wrapper">
+                    <a className="secondary-btn" href="#"><span className="m-1"><FaArrowRight /></span>View all Members</a>
+                    </div>
                     </Col>
                 </Row>
             </Container>

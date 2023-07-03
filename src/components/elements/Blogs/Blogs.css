@@ -4,10 +4,14 @@
 }
 .blogs-wrapper{
     padding: 50px 0;
+    max-width: 100%;
 }
 .blog-wrapper{
     padding: 20px 0;
-    border-radius: 6px;
+}
+.blogs-upper-content h3{
+    font-weight: 900;
+    font-size: 44px;
 }
 .blog-content-wrapper h3{
     font-weight: 500;
@@ -24,6 +28,11 @@
 .blog-content-wrapper a:hover{
     color: #393691;
 }
+.blog-image-wrapper img{
+    width: 100%;
+    border-radius: 6px;
+}
+
 /* .blog-wrapper .blog-image-wrapper{
     overflow: hidden;
     border-radius: 6px;

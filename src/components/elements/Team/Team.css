@@ -1,5 +1,6 @@
 .team-section-wrapper{
     padding: 100px 0;
+    max-width: 100%;
 }
 
 .team-heading-wrapper h3{
@@ -7,10 +8,17 @@
     font-size: 44px;
 }
 .team-member-wrapper{
-    padding: 50px 0;
+    padding-top: 20px;
+    background-color: #021327;
+    margin-bottom: 10px;
+}
+.team-member-wrapper:hover{
+    background: linear-gradient(220deg, #533efe, #740fd6);
 }
 .team-member-image-wrapper img{
+    padding: 30px;
     max-width: 100%;
+    border-radius: 50%;
 }
 .team-member-wrapper .team-member-image-wrapper{
     position: relative;
@@ -21,51 +29,29 @@
     transition: all 0.3s ease-out 0s;
     width: 100%;
 }
-.team-member-wrapper:hover .team-member-image-wrapper img{
-    transform: scale(1.1);
+.team-member-content-wrapper h5{
+    font-weight: 700;
+    color: white;
 }
-
-.team-member-wrapper:hover .team-member-image-wrapper::before{
-    opacity: 0.5;
+.team-member-content-wrapper span{
+    color: white;
 }
-.team-member-wrapper .team-member-image-wrapper::before{
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: 0.5;
-    z-index: 9;
-    opacity: 0;
-    transition: all 0.3s ease-out 0s;
+.team-member-social-links ul{
+    display: flex;
+    justify-content: space-around;
 }
-.team-member-wrapper .team-member-image-wrapper ul{
-    position: absolute;
-    left: 50%;
-    bottom: 30px;
-    transform: translateX(-50%);
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    z-index: 11;
-    opacity: 0;
-    visibility: visible;
-    transition: all 0.3s ease-out 0s;
+.team-member-social-links ul li{
+    list-style: none;
 }
-.team-member-wrapper .team-member-image-wrapper ul li{
-    margin: 0 3px;
-    display: inline-block;
-    z-index: 25;
+.team-member-social-links ul li a{
+    padding: 5px;
+    border: 1px solid white;
+    background-color: #1f3654;
+    transition: all 3s ease-out 0s;
 }
-.team-member-wrapper .team-member-image-wrapper ul li a{
-    display: inline-block;
-    height: 36px;
-    width: 36px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    text-align: center;
-    line-height: 36px;
-    border-radius: 50px;
-    color: #fff;
+.team-member-social-links ul li a:hover{
+    background: linear-gradient(220deg, #533efe, #740fd6);
+}
+.team-button-wrapper{
+    margin-top: 50px;
 }

@@ -1,4 +1,4 @@
-import { bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,packages,questions,packagesFeatures } from "../../../data/data";
+import { bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,packages,questions,packagesFeatures,helpLinks } from "../../../data/data";
 import Banner from "../Banner/Banner";
 import Services from "../Services/Services";
 import Features from "../Features/Features";
@@ -8,6 +8,8 @@ import Team from "../Team/Team";
 import Blogs from "../Blogs/Blogs";
 import Packages from "../Packages/Packages";
 import Questions from "../Questions/Questions";
+import Project from "../ProjectArea/project";
+import Footer from "../Footer/Footer";
 
 const Home1 = () => {
     return(
@@ -21,6 +23,8 @@ const Home1 = () => {
             <Packages packages={packages} packagesFeatures={packagesFeatures}/>
             <Questions questions={questions}/>
             <Blogs blogs={blogs}/>
+            <Project />
+            <Footer helpLinks={helpLinks}/>
         </div>
     )
 }

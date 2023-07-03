@@ -8,6 +8,9 @@ import team4 from "../assets/team/team-4.jpg";
 import blog1 from "../assets/blogs/blog-1.jpg";
 import blog2 from "../assets/blogs/blog-2.jpg";
 import blog3 from "../assets/blogs/blog-3.jpg";
+import basic from "../assets/packages/basic.svg";
+import standard from "../assets/packages/standard.svg";
+import premium from "../assets/packages/unlimited.svg";
 import {FaHeadphones,FaLock,FaSmile,FaSearch,FaCheck} from "react-icons/fa";
 
 
@@ -153,26 +156,45 @@ const blogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
-    }
+    },
 ];
 const packages = [
     {
         id:1,
-        title:"Fresh",
-        price:4,
-        description:"Get your 14 day free trial",
+        title:"Basic",
+        src:basic,
+        price:29,
+        feature1:"5 Users access same time",
+        feature2:"Integrated eCommerce",
+        feature3:"Customization interface",
+        feature4:"Weekly updated",
+        feature5:"24/7 Phone Support",
+        feature6:"Event Analytics",
     },
     {
         id:2,
-        title:"Sweet",
-        price:16,
-        description:"Billed $276 per website annually.",
+        title:"Standard",
+        src:standard,
+        price:145,
+        feature1:"10 Users access same time",
+        feature2:"Integrated eCommerce",
+        feature3:"Customization interface",
+        feature4:"Daily updated",
+        feature5:"24/7 Phone Support",
+        feature6:"Event Analytics",
+        
     },
     {
         id:3,
-        title:"Juicy",
-        price:27,
-        description:"Billed $276 per website annually.",
+        title:"Unlimited",
+        src:premium,
+        price:249,
+        feature1:"20 Users access same time",
+        feature2:"Integrated eCommerce",
+        feature3:"Fully Customization interface",
+        feature4:"Free updated",
+        feature5:"24/7 Phone Support",
+        feature6:"Event Analytics",
     },
 ];
 const packagesFeatures = [
@@ -218,6 +240,28 @@ const questions = [
         question:"Where do I usually find FAQs in a page?",
         answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
     },
-]
+];
+const helpLinks = [
+    {
+        id:1,
+        link:'Customer Services',
+    },
+    {
+        id:2,
+        link:'IT Department',
+    },
+    {
+        id:3,
+        link:'About Our Company',
+    },
+    {
+        id:4,
+        link:'Business Growth',
+    },
+    {
+        id:5,
+        link:'Make an Appointment',
+    }
+];
 
-export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,packages,questions,packagesFeatures}; 
+export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,packages,questions,packagesFeatures,helpLinks}; 

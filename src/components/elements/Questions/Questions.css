@@ -1,8 +1,30 @@
 .questions-section-wrapper{
     background-color: #EEF1F6;
+    background-position: 94% 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    max-width: 100%;
 }
 .questions-heading-wrapper h3{
     font-weight: 900;
     font-size: 44px;
     color: black;
+}
+.questions-section-main-wrapper{
+    background-color: #fff;
+    padding: 18px 0;
+    margin-bottom: 10px;
+}
+.questions-content-wrapper{
+    padding: 0 30px;
+}
+.question-wrapper h4{
+    font-weight: 700;
+    font-size: 18px;
+    color: #5653b1;
+}
+.answer-wrapper p{
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
 }

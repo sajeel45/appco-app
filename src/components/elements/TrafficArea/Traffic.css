@@ -1,6 +1,7 @@
 .traffic-area-wrapper{
     background-color: #EEF1F6;
     padding: 50px 0;
+    max-width: 100%;
 }
 .traffic-area-text-wrapper span{
     color: #5653b1;
@@ -11,6 +12,12 @@
 .title{
     font-weight: 700;
     font-size: 30px;
+}
+.traffic-item-text-wrapper{
+    margin-left: 10px;
+}
+.traffic-item-icon-wrapper{
+    margin-top: 10px;
 }
 .traffic-item-text-wrapper h5{
     font-weight: 700;
@@ -32,6 +39,7 @@
     padding: 10px 20px;
     text-decoration: none;
     transition: all 0.4s ease-out 0s;
+    margin-bottom: 10px;
 }
 .secondary-btn:hover{
     background-color: #5653b1;

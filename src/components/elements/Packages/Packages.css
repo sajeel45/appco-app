@@ -1,5 +1,6 @@
 .packages-section-wrapper{
     background-color: #eef1f6;
+    max-width: 100%;
 }
 .package-heading-wrapper h3{
     font-weight: 700;
@@ -12,14 +13,17 @@
     padding: 40px;
     background-color: #fff;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 .center-package{
     box-shadow: 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
+    border-top: 4px solid #5653b1;
 }
-
 .package-price{
     font-weight: 900;
-    font-size: 44px;
+    font-size: 30px;
+    color: #5653b1;
+    padding-top: 10px;
 }
 .features-list{
     list-style: none;
@@ -36,11 +40,15 @@
     border-radius: 50%;
     padding: 3px;
 }
+.package-image-wrapper img{
+    width: 50px;
+}
 .package-button-wrapper a.main-btn{
     margin-top: 15px;
     padding: 2px 20px;
     text-align: center;
     text-decoration: none;
+    border-radius: 50px;
 }
 .normal-package .package-button-wrapper a{
     background-color: #fff;
@@ -51,6 +59,8 @@
 } 
 .normal-package:hover{
     box-shadow: 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
+    border-top: 4px solid #5653b1;
+    
 }
 .normal-package .package-button-wrapper a:hover{
     background-color: #5653b1;

@@ -1,5 +1,7 @@
 import { Container,Row,Col } from "react-bootstrap";
 import background from "../../../assets/service/shape-1.png";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css';
 import "./Services.css";
 
 const services = (props) => {
@@ -22,6 +24,7 @@ const services = (props) => {
             <Row>
             {services.map((item,index)=>(
                 <Col lg="3" md="6" sm="12">
+                    <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true">
                     <div className="service-item-wrapper" key={index}>
                         <div className="service-icon-wrapper">
                             <span>{item.icon}</span>
@@ -33,7 +36,7 @@ const services = (props) => {
                             <p className="text-align-center">{item.description}</p>
                         </div>
                     </div>
-                    
+                    </AnimationOnScroll>
                 </Col>
                 ))}
             </Row>
