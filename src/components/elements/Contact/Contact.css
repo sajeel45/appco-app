@@ -1,0 +1,42 @@
+.contact-page-wrapper{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    padding: 100px 0;
+    max-width: 100%;
+}
+.contact-page-wrapper::before{
+    background: rgba(0,0,0,.52);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+}
+.contact-thumb-content{
+    padding: 100px 0;
+    z-index: 9;
+    position: relative;
+}
+.contact-thumb-content h2{
+    color: white;
+    font-weight: 700;
+}
+.contact-thumb-content ul{
+    display: flex;
+    margin: 0;
+    padding: 0             ;
+}
+.contact-thumb-content ul li a{
+    color: white;
+    text-decoration: none;
+}
+.contact-thumb-content ul li{
+    color: white;
+    margin-right: 4px;
+    list-style: none;
+}

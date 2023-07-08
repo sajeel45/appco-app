@@ -8,6 +8,10 @@
     background-color: white;
     max-width: 100%;
 }
+.nav-link-style{
+    color: black;
+    text-decoration: none ;
+}
 .nav-item-link>p{
     color: black;
 }
@@ -23,16 +27,23 @@
 .nav-dropdown-link > li >a:hover{
     color: black;
 }
+
 .nav-dropdown-link li .nav-link {
-    /* Define the styles for the link title */
-    /* For example, you can set the initial background color and transition properties */
     transition: all 3s ease-out .3s;
-  }
+}
 .nav-dropdown-link li:hover .dropdown-menu {
     /* Define the styles for the dropdown menu when hovering over the link title */
     /* For example, you can change the display and visibility properties */
     display: block;
     visibility: visible;
+
+  }
+  .nav-link>span{
+    transition: all 0.5s ease-out 0s;
+  }
+  
+  .nav-link>span:hover{
+    padding-left: 10px;
   }
 .logo-link img{
     width: 120px;

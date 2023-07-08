@@ -1,0 +1,21 @@
+.service-page-wrapper{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.service-page-thumb-wrapper{
+    padding: 100px 0 0 0;
+}
+.service-page-thumb-wrapper span{
+    color: white;
+}
+.service-page-thumb-wrapper h3{
+    font-weight: 700;
+    font-size: 44px;
+    color: white;
+}
+.service-page-thumb{
+    right: 110px;
+    width: auto;
+}

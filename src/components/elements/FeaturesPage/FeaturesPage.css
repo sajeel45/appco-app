@@ -1,0 +1,18 @@
+.features-page-wrapper{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    max-width: 100%;
+}
+.features-page-content h3{
+    color: white;
+    font-size: 34px;
+    font-weight: 800;
+}
+.features-page-content span{
+    color: white;
+}
+.features-page-content{
+    padding: 100px 0;
+}

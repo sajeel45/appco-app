@@ -1,0 +1,18 @@
+.pricing-page-content-wrapper{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    max-width: 100%;
+}
+.pricing-content{
+    padding: 50px 0;
+}
+.pricing-content h3{
+    font-weight: 800;
+    font-size: 34px;
+    color: white;
+}
+.pricing-content span{
+    color: white;
+}

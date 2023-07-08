@@ -1,0 +1,19 @@
+.aboutUs-top-title-wrapper{
+    padding-top: 200px;
+}
+.about-us-top-title-wrapper {
+    position: relative;
+}
+.about-us-top-title-wrapper .title{
+    font-size: 60px;
+}
+.about-us-top-title-wrapper h2::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 42px;
+    width: 100%;
+    height: 20px;
+    background: #ff6e85;
+    z-index: -1;
+}

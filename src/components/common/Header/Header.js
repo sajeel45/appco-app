@@ -1,5 +1,6 @@
 import logo from "../../../assets/logo/logo.png";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -12,9 +13,9 @@ const Header = () => {
       <Container>
         <Row>
           <Col sm="12" lg="4" md="6">
-            <a to="#" className="logo-link">
+            <Link to="/" className="logo-link">
               <img src={logo} alt="logo" className="img-fluid mt-20" />
-            </a>
+            </Link>
           </Col>
           <Col className="header-nav-wrapper" md="6" sm="6" lg="8">
             <div className="nav-items-wrapper">
@@ -24,42 +25,44 @@ const Header = () => {
                   <Nav className="me-auto nav-dropdown-link">
                     <NavDropdown title="Home" id="basic-nav-dropdown" as="li">
                       <NavDropdown.Item href="#home1" className="nav-link">
-                        <span>Home 1</span>
+                        <Link to="/" className="nav-link-style nav-link"><span>Home 1</span></Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#home2" className="nav-link">
-                        <span>Home 2</span>
+                        <Link to="/" className="nav-link-style nav-link"><span>Home 2</span></Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#home3" className="nav-link">
-                        <span>Home 3</span>
+                      <NavDropdown.Item className="nav-link">
+                      <Link to="/" className="nav-link-style nav-link"><span>Home 3</span></Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#home4" className="nav-link">
-                        <span>Home 4</span>
+                      <Link to="/" className="nav-link-style nav-link"><span>Home 4</span></Link>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <NavLink href="#" className="nav-item-link">
-                      <p>About</p>
+                    <NavLink href="#"  className="nav-link">
+                      <Link to="/AboutUs" className="nav-link-style">About</Link>
+                    </NavLink >
+                    <NavLink className="nav-link">
+                      <Link to="/Services" className="nav-link-style">Services</Link>
                     </NavLink>
-                    <NavLink href="#" className="nav-item-link">
-                      <p>Features</p>
+                    <NavLink className="nav-link">
+                    <Link to="/Features" className="nav-link-style">
+                      Features
+                    </Link>
                     </NavLink>
-                    <NavLink href="#" className="nav-item-link">
-                      <p>Pricing</p>
+                    <NavLink className="nav-link">
+                      <Link to="/Pricing" className="nav-link-style">Pricing</Link>
                     </NavLink>
                     <NavDropdown title="Pages" as="li" id="basic-nav-dropdown">
-                      <NavDropdown.Item href="#Page1" className="nav-link">
-                        <span>Page 1</span>
+                      <NavDropdown.Item >
+                        <Link to="/AboutUs" className="nav-link nav-link-style"><span>About Us</span></Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#Page2" className="nav-link">
-                        <span>Page 2</span>
+                      <NavDropdown.Item>
+                      <Link to="/Services" className="nav-link nav-link-style"><span>Services</span></Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#Page3" className="nav-link">
-                        <span>Page 3</span>
+                      <NavDropdown.Item>
+                      <Link to="/Features" className="nav-link nav-link-style"><span>Features</span></Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#Page4" className="nav-link">
-                        <span>Page 4</span>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#Page5" className="nav-link">
-                        <span>Page 5</span>
+                      <NavDropdown.Item>
+                      <Link to="/Pricing" className="nav-link nav-link-style"><span>Pricing</span></Link>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Blogs" as="li" id="basic-nav-dropdown">
@@ -73,11 +76,9 @@ const Header = () => {
                         <span>Blog Right Sidebar</span>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <NavLink href="#" className="nav-item-link">
-                      <p>Team</p>
-                    </NavLink>
-                    <NavLink href="#" className="nav-item-link">
-                      <p>Contact</p>
+                    <NavLink className="nav-item-link">
+                      <Link to="/Contact" className="nav-link-style">Contact</Link>
+                      <p></p>
                     </NavLink>
                   </Nav>
                 </Navbar.Collapse>

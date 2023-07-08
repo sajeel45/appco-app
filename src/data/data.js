@@ -11,7 +11,19 @@ import blog3 from "../assets/blogs/blog-3.jpg";
 import basic from "../assets/packages/basic.svg";
 import standard from "../assets/packages/standard.svg";
 import premium from "../assets/packages/unlimited.svg";
-import {FaHeadphones,FaLock,FaSmile,FaSearch,FaCheck} from "react-icons/fa";
+import sponsor1 from "../assets/sponsors/sponser-1.png";
+import sponsor2 from "../assets/sponsors/sponser-2.png";
+import sponsor3 from "../assets/sponsors/sponser-3.png";
+import sponsor4 from "../assets/sponsors/sponser-4.png";
+import sponsor5 from "../assets/sponsors/sponser-5.png";
+import sponsor6 from "../assets/sponsors/sponser-6.png";
+import sponsor7 from "../assets/sponsors/sponser-7.png";
+import sponsor8 from "../assets/sponsors/sponser-8.png";
+import sponsor9 from "../assets/sponsors/sponser-9.png";
+import sponsor10 from "../assets/sponsors/sponser-10.png";
+import {FaHeadphones,FaLock,FaSmile,FaSearch,FaCheck,FaTv,
+    FaCode,FaUserFriends,FaMobile,FaRetweet,FaBell,FaHome,FaTag,FaBookmark,FaGlobe
+,FaEnvelope,FaPhone} from "react-icons/fa";
 
 
 const bannerItems = [
@@ -263,5 +275,138 @@ const helpLinks = [
         link:'Make an Appointment',
     }
 ];
+const services2 = [
+    {
+        id:1,
+        icon:<FaTv color="#f8452d"/>,
+        title:"Carefully Designed",
+        description:"He lost his bottle loo don't get shirty with me ruddy.",
+        background:"#2b70fa"
+    },
+    {
+        id:2,
+        icon:<FaCode color="#db0f30"/>,
+        title:"Clean Modern Code",
+        description:"He lost his bottle loo don't get shirty with me ruddy."
+    },
+    {
+        id:3,
+        icon:<FaUserFriends color="#f8452d"/>,
+        title:"User Interactive",
+        description:"He lost his bottle loo don't get shirty with me ruddy."
+    },
+    {
+        id:4,
+        icon:<FaMobile color="#db0f30"/>,
+        title:"Choose an App",
+        description:"He lost his bottle loo don't get shirty with me ruddy."
+    },
+    {
+        id:5,
+        icon:<FaRetweet color="#db0f30"/>,
+        title:"Seamless Sync",
+        description:"He lost his bottle loo don't get shirty with me ruddy."
+    },
+    {
+        id:6,
+        icon:<FaBell color="#db0f30"/>,
+        title:"Notification Settings",
+        description:"He lost his bottle loo don't get shirty with me ruddy."
+    }
+];
+const sponsors = [
+    {
+        id:1,
+        img:sponsor1
+    },
+    {
+        id:2,
+        img:sponsor2
+    },
+    {
+        id:3,
+        img:sponsor3
+    },
+    {
+        id:4,
+        img:sponsor4
+    },
+    {
+        id:5,
+        img:sponsor5
+    },
+    {
+        id:6,
+        img:sponsor6
+    },
+    {
+        id:7,
+        img:sponsor7
+    },
+    {
+        id:8,
+        img:sponsor8
+    },
+    {
+        id:9,
+        img:sponsor9
+    },
+    {
+        id:1,
+        img:sponsor10
+    }
 
-export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,packages,questions,packagesFeatures,helpLinks}; 
+];
+const detailsItems = [
+    {
+        id:1,
+        icon:<FaHome color="#5754B1"/>,
+        caption:"Fast Development"
+    },
+    {
+        id:2,
+        icon:<FaTag color="#5754B1"/>,
+        caption:"App, UX"
+    },
+    {
+        id:3,
+        icon:<FaUserFriends color="#5754B1"/>,
+        caption:"20-30 Employees"
+    },
+    {
+        id:4,
+        icon:<FaBookmark color="#5754B1"/>,
+        caption:"Appie Template"
+    },
+    {
+        id:5,
+        icon:<FaGlobe color="#5754B1"/>,
+        caption:"quomodosoft.com/appie"
+        
+    },
+
+];
+const addressInfo = [
+    {
+        id:1,
+        icon:<FaGlobe color="#5653b1" size="50px"/>,
+        caption:"Our Address:",
+        info:"411 University St, Seattle, USA"
+    },
+    {
+        id:1,
+        icon:<FaEnvelope color="#5653b1" size="50px"/>,
+        caption:"Our Mailbox:",
+        info:"Example@gmail.com"
+    },
+    {
+        id:3,
+        icon:<FaPhone color="#5653b1" size="50px"/>,
+        caption:"Our Phone:",
+        info:"+1 -800-456-478-23"
+    }
+
+]
+
+export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,
+    packages,questions,packagesFeatures,helpLinks,services2,sponsors,detailsItems,addressInfo}; 
