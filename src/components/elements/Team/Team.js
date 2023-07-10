@@ -1,5 +1,5 @@
 import { Container,Row,Col } from "react-bootstrap";
-import {FaArrowRight,FaFacebook,FaLinkedin,FaTwitter} from "react-icons/fa";
+import {FaFacebook,FaLinkedin,FaTwitter} from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Link } from "react-router-dom";
 import "animate.css";
@@ -29,7 +29,7 @@ const Team = (props) => {
                                 <span>{item.designation}</span>
                                 <div className="team-member-social-links pt-3 pb-3">
                                 <ul>
-                                    <li><Link to="#"><FaLinkedin color="white"/></Link></li>
+                                    <li><Link to="https://www.linkedin.com/in/muhammad-sajeel-34405b221/"><FaLinkedin color="white"/></Link></li>
                                     <li><Link to="#"><FaTwitter color="white"/></Link></li>
                                     <li><Link to="#"><FaFacebook color="white"/></Link></li>
                                 </ul>
