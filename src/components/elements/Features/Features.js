@@ -2,6 +2,7 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 import featureThumb from "../../../assets/features/features-thumb-1.png";
 import {FaHandshake,FaLock,FaBell,FaExclamation} from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { Link } from "react-router-dom";
 import "animate.css";
 import "./Features.css";
 
@@ -17,13 +18,14 @@ const features = () => {
               <Nav variant="pills" defaultActiveKey="#" className="flex-column">
                 <div className="nav-link-wrapper active"> 
                 <Nav.Link href="#" className="pills-style">
-                <span className="feature-icon"><FaHandshake color="white"/></span>Settings
+                  <Link to="/" className="features-link">
+                <span className="feature-icon"><FaHandshake color="white"/></span>Settings</Link>
                 </Nav.Link>
                 </div>
                 <div className="nav-link-wrapper">
-                <Nav.Link href="#" eventKey="link-1"><span className="feature-icon"><FaExclamation color="white"/></span>Report</Nav.Link></div>
-                <div className="nav-link-wrapper"><Nav.Link href="#" eventKey="link-2"><span className="feature-icon"><FaBell color="white"/></span>Safety Notices</Nav.Link></div>
-                <div className="nav-link-wrapper"><Nav.Link href="#" eventKey="link-3"><span className="feature-icon"><FaLock color="white"/></span>App Lock</Nav.Link></div>
+                <Nav.Link href="#" eventKey="link-1"><Link to="/" className="features-link"><span className="feature-icon"><FaExclamation color="white"/></span>Report</Link></Nav.Link></div>
+                <div className="nav-link-wrapper"><Nav.Link href="#" eventKey="link-2"><Link to="/" className="features-link"><span className="feature-icon"><FaBell color="white"/></span>Safety Notices</Link></Nav.Link></div>
+                <div className="nav-link-wrapper"><Nav.Link href="#" eventKey="link-3"><Link to="/" className="features-link"><span className="feature-icon"><FaLock color="white"/></span>App Lock</Link></Nav.Link></div>
               </Nav>
             </div>
             </AnimationOnScroll>
@@ -51,9 +53,9 @@ const features = () => {
                       Car boot absolutely bladdered posh burke the wireless mush
                       some dodg.
                     </p>
-                    <a className="main-btn" href="#">
+                    <Link className="main-btn" to="/">
                       Learn More
-                    </a>
+                    </Link>
                   </div>
                 </Col>
               </Row>

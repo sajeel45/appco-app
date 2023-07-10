@@ -406,7 +406,81 @@ const addressInfo = [
         info:"+1 -800-456-478-23"
     }
 
-]
+];
+const twoBlogs = [
+    {
+        id:1,
+        src:blog1,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"17 Effective Ways to Monetize Mobile Apps",
+    },
+    {
+        id:2,
+        src:blog2,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"How to bring Dolce to your company",
+    },
+    {
+        id:3,
+        src:blog3,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"Introducing New Apps Design for our iOS App",
+    },
+    {
+        id:4,
+        src:blog1,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"17 Effective Ways to Monetize Mobile Apps",
+    },
+    {
+        id:5,
+        src:blog2,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"How to bring Dolce to your company",
+    },
+    {
+        id:6,
+        src:blog3,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"Introducing New Apps Design for our iOS App",
+    },
+    {
+        id:7,
+        src:blog1,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"17 Effective Ways to Monetize Mobile Apps",
+    },
+    {
+        id:8,
+        src:blog2,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"How to bring Dolce to your company",
+    },
+    {
+        id:9,
+        src:blog3,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"Introducing New Apps Design for our iOS App",
+    },
+    {
+        id:10,
+        src:blog1,
+        meta1:"Saas & App",
+        meta2:"April 14,2022",
+        title:"Introducing New Apps Design for our iOS App",
+    },
+];
+
 
 export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,
-    packages,questions,packagesFeatures,helpLinks,services2,sponsors,detailsItems,addressInfo}; 
+    packages,questions,packagesFeatures,helpLinks,services2,sponsors,detailsItems,addressInfo
+,twoBlogs}; 

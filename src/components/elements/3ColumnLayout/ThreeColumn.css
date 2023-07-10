@@ -1,0 +1,9 @@
+.three-column-heading{
+    padding: 100px 0 50px 0;
+}
+.three-column-heading h3{
+    font-size: 44px;
+    color: black;
+    font-weight: 800;
+    margin: 0;
+}

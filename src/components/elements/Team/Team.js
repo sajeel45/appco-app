@@ -1,6 +1,7 @@
 import { Container,Row,Col } from "react-bootstrap";
 import {FaArrowRight,FaFacebook,FaLinkedin,FaTwitter} from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { Link } from "react-router-dom";
 import "animate.css";
 import "./Team.css"
 
@@ -28,9 +29,9 @@ const Team = (props) => {
                                 <span>{item.designation}</span>
                                 <div className="team-member-social-links pt-3 pb-3">
                                 <ul>
-                                    <li><a href="#"><FaLinkedin color="white"/></a></li>
-                                    <li><a href="#"><FaTwitter color="white"/></a></li>
-                                    <li><a href="#"><FaFacebook color="white"/></a></li>
+                                    <li><Link to="#"><FaLinkedin color="white"/></Link></li>
+                                    <li><Link to="#"><FaTwitter color="white"/></Link></li>
+                                    <li><Link to="#"><FaFacebook color="white"/></Link></li>
                                 </ul>
                                 </div>
                             </div>
@@ -38,11 +39,6 @@ const Team = (props) => {
                         </AnimationOnScroll>
                     </Col>
                     ))}
-                    <Col className="text-center">
-                        <div className="team-button-wrapper">
-                    <a className="secondary-btn" href="#"><span className="m-1"><FaArrowRight /></span>View all Members</a>
-                    </div>
-                    </Col>
                 </Row>
             </Container>
         </div>

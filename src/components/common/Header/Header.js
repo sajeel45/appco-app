@@ -67,13 +67,10 @@ const Header = () => {
                     </NavDropdown>
                     <NavDropdown title="Blogs" as="li" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#blog1" className="nav-link">
-                        <span>Blog Grid</span>
+                        <Link to="/twoColumn" className="nav-link nav-link-style"><span>2 Column Layout</span></Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#Page2" className="nav-link">
-                        <span>Blog Left Sidebar</span>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#Page3" className="nav-link">
-                        <span>Blog Right Sidebar</span>
+                        <Link to="/threeColumn" className="nav-link nav-link-style"><span>3 Column Layout</span></Link>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavLink className="nav-item-link">

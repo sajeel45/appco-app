@@ -31,6 +31,9 @@
 .nav-dropdown-link li .nav-link {
     transition: all 3s ease-out .3s;
 }
+.nav-dropdown-link li .dropdown-menu{
+    transition: all 0.5s ease-out .3s;
+}
 .nav-dropdown-link li:hover .dropdown-menu {
     /* Define the styles for the dropdown menu when hovering over the link title */
     /* For example, you can change the display and visibility properties */

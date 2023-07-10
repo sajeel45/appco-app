@@ -9,7 +9,8 @@ import Services from './components/Pages/Services/Services';
 import Features from './components/Pages/Features/Features';
 import PricingPage from './components/Pages/Pricing/PricingPage';
 import ContactPage from './components/Pages/ContactPage/ContactPage';
-
+import TwoCoulumnPage from './components/Pages/TwoColumnPage/TwoColumnPage';
+import ThreeColumnPage from './components/Pages/ThreeColumnPage/ThreeColumnPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +37,14 @@ function App() {
     {
       path:"/Contact",
       element:<ContactPage />
+    },
+    {
+      path:"/twoColumn",
+      element:<TwoCoulumnPage />
+    },
+    {
+      path:"/threeColumn",
+      element:<ThreeColumnPage />
     }
   ])
   return (

@@ -11,7 +11,7 @@
     
 }
 .features-text-wrapper .nav-link{
-    color: 5653b1#;
+    color: #5653b1;
 }
 .features-text-wrapper span{
     color: #5653b1;
@@ -61,4 +61,8 @@
 .nav-link-wrapper .active{
     border-right:2px solid #5653b1;
     border-radius: 0px;
+}
+.features-link{
+    text-decoration: none;
+    color: #5653b1;
 }

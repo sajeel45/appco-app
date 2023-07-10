@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import trafficThumb from "../../../assets/traffic/traffic-thumb.png";
 import { FaArrowRight } from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { Link } from "react-router-dom";
 import "animate.css";
 import "./Traffic.css";
 
@@ -35,12 +36,12 @@ const trafficArea = (props) => {
                 </Col>
               ))}
               <Col lg="12" className="mb-5">
-                <a class="secondary-btn" href="#">
+                <Link class="secondary-btn" to="/">
                   <span style={{ marginRight: "5px" }}>
                     <FaArrowRight />
                   </span>
                   Learn More{" "}
-                </a>
+                </Link>
               </Col>
             </Row>
           </Col>

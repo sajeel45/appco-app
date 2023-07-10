@@ -2,6 +2,7 @@ import { Container,Row,Col,Form,Button  } from "react-bootstrap";
 import projectbg from "../../../assets/subscription/project-bg.jpg";
 import projectThumb from "../../../assets/subscription/project-thumb.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { Link } from "react-router-dom";
 import "animate.css";
 import "./project.css";
 
@@ -26,7 +27,7 @@ const project = () =>{
             <Form.Control type="email" placeholder="Your Email" className="input-tab-style"/>
             </div>
             <div>
-            <Button className="email-btn-syle">Subscribe</Button>
+            <Button className="email-btn-syle"><Link to="/" className="project-btn-style">Subscribe</Link></Button>
             </div>
         
         

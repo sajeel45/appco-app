@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import {FaArrowRight} from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Blogs.css";
 
 const Blogs = (props) => {
@@ -30,7 +31,7 @@ const Blogs = (props) => {
                         <h3><a href="#">{item.title}</a></h3>
                     </div>
                     <Col className="blog-button">
-                    <a className="secondary-btn " href="#"><span className="m-1"><FaArrowRight /></span>Learn More</a>
+                    <Link className="secondary-btn " href="#"><span className="m-1"><FaArrowRight /></span>Learn More</Link>
                     </Col>
                 </div>
           </Col>

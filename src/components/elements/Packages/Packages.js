@@ -1,5 +1,6 @@
 import { Container,Row,Col } from "react-bootstrap";
-import { FaCheck, FaDollarSign } from "react-icons/fa";
+import {  FaDollarSign } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Packages.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -45,7 +46,7 @@ Choose your Best One</h3>
                                     <span><FaDollarSign size="30px" color="#5653b1"/><span className="package-price">{item.price}</span></span>
                                 </div>
                             <div className="package-button-wrapper">
-                                <a className="main-btn" href="#">Purchase Now</a>
+                                <Link className="main-btn" href="#">Purchase Now</Link>
                             </div>
                             </div>
                             
