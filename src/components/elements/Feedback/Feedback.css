@@ -1,5 +1,4 @@
 .feedback-wrapper{
-    margin-top: 100px;
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -14,9 +13,14 @@
     justify-content: center;
     align-items: center;
 }
+.user-image-wrapper img{
+    width: 120px;
+    border-radius: 50%;
+}
 .feedback-content-wrapper{
     color: white;
     text-align: center;
+    padding-top: 50px;
 }
 .date-styling{
     display: inline-block;

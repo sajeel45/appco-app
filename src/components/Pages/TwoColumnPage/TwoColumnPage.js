@@ -8,7 +8,7 @@ const twoCoulumnPage = () =>{
         <div>
             <Header />
             <TwoColumn twoBlogs={twoBlogs}/>
-            <Footer helpLinks={helpLinks} margin="0px"/>
+            <Footer helpLinks={helpLinks} marginTop="3rem"/>
         </div>
     )
 };

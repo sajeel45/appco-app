@@ -16,8 +16,9 @@
 .footer-social-links span{
     border: 1px solid black;
     margin-right: 15px;
-    padding: 5px;
+    padding: 10px;
     transition: all 1s ease-out 0s;
+    border-radius: 50%;
 }
 .footer-social-links span:hover{
     background-color: #533efe;

@@ -7,6 +7,9 @@
     font-weight: 700;
     font-size: 44px;
 }
+.team-members-wrapper{
+    padding-top: 26px;
+}
 .team-member-wrapper{
     padding-top: 20px;
     background-color: #021327;
@@ -44,10 +47,11 @@
     list-style: none;
 }
 .team-member-social-links ul li a{
-    padding: 5px;
+    padding: 10px;
     border: 1px solid white;
     background-color: #1f3654;
     transition: all 3s ease-out 0s;
+    border-radius: 50%;
 }
 .team-member-social-links ul li a:hover{
     background: linear-gradient(220deg, #533efe, #740fd6);

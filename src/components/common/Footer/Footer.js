@@ -7,7 +7,7 @@ import "./Footer.css";
 const footer = (props) => {
   const helpLinks = props.helpLinks;
   return (
-    <div className="footer-section-wrapper" style={{ margin: props.margin }}>
+    <div className="footer-section-wrapper" style={{ marginTop: props.margin }}>
       <Container>
         <div className="footer-section-main-wrapper">
           <Row>
@@ -57,7 +57,7 @@ const footer = (props) => {
                         <ul key={index}>
                           <li>
                             <span>-</span>
-                            <Link to="/">{item.link}</Link>
+                            <Link to={item.route}>{item.link}</Link>
                           </li>
                         </ul>
                       </div>
@@ -109,13 +109,13 @@ const footer = (props) => {
                   <div className="footer-section-bottom-links">
                     <ul>
                       <li>
-                        <Link to="#">About Us</Link>
+                        <Link to="/AboutUs">About Us</Link>
                       </li>
                       <li>
                         <Link to="#">Privacy Policy</Link>
                       </li>
                       <li>
-                        <Link to="#">Services</Link>
+                        <Link to="/Services">Services</Link>
                       </li>
                     </ul>
                   </div>

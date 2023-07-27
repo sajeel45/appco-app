@@ -9,7 +9,6 @@ const feedback = (props) => {
   const feedbacks = props.feedbacks;
   var settings = {
     arrows: true,
-    dots: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -34,9 +33,9 @@ const feedback = (props) => {
                   </div>
                   <div className="feedback-content-wrapper">
                   <Container>
-                    <h5>{item.name}</h5>
-                    <span className="date-styling">{item.date}</span>
-                    <p>{item.feedback}</p>
+                    <h5 className="pb-3">{item.name}</h5>
+                    <span className="date-styling pb-3">{item.date}</span>
+                    <p className="pb-3">{item.feedback}</p>
                     <span><FaStar color="yellow"/><FaStar color="yellow"/><FaStar color="yellow"/><FaStar color="yellow"/><FaStar color="yellow"/></span>
                     </Container>
                   </div>

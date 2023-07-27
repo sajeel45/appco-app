@@ -1,6 +1,9 @@
 import { Container,Row,Col } from "react-bootstrap";
 import blog1 from "../../../assets/blogs/blog-2.jpg";
 import blog2 from "../../../assets/blogs/blog-3.jpg";
+import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
+import { Link } from "react-router-dom";
+import { FaChevronRight,FaArrowRight } from "react-icons/fa";
 import "./ThreeColumn.css";
 const blogItems = [
     {
@@ -9,6 +12,7 @@ const blogItems = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
+        link:"/Blog1"
     },
     {
         id:12,
@@ -16,6 +20,7 @@ const blogItems = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
+        link:"/Blog2"
     },
 ]
 const ThreeColumn = (props) =>{
@@ -25,13 +30,18 @@ const ThreeColumn = (props) =>{
     console.log(newBlogs);
     return(
         <div className="three-column-page-wrapper">
-            <Container>
-                <Row>
-                    <Col lg="12" md="12" sm="12">
-                    <div className="three-column-heading text-center">
+            <div className="three-column-thumb-wrapper" style={{backgroundImage:`url(${pagetitlebg})`}}>
+            <div className="three-column-heading text-center" >
                 <h3>3 Column Layout</h3>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><FaChevronRight color="white"/></li>
+                    <li>3 Column Blog</li>
+                </ul>
                 </div>
-                    </Col>
+                </div>
+            <Container>
+                <Row className="mt-5">
                     {newBlogs.map((item,index)=>(
                     <Col lg="4" md="6" sm="12">
                         <div className="three-column-blogs-wrapper" key={index}>
@@ -41,10 +51,14 @@ const ThreeColumn = (props) =>{
                     </div>
                     <div className="blog-content-wrapper ">
                     <ul className="list">
-                            <li><a>{item.meta1}</a></li>
-                            <li><a>{item.meta2}</a></li>
+                            <li><Link>{item.meta1}</Link></li>
+                            <li><Link>{item.meta2}</Link></li>
                         </ul>
-                        <h3><a href="#">{item.title}</a></h3>
+                        <h3><Link to={item.link}>{item.title}</Link></h3>
+                        <p>{item.description}</p>
+                        <div className="read-more-button">
+                            <Link to={item.link}>Read More <span><FaArrowRight color="black"/></span></Link>
+                        </div>
                     </div>
                             </div>
                         </div>

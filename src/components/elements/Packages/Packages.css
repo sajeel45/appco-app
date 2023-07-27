@@ -1,13 +1,20 @@
 .packages-section-wrapper{
     background-color: #eef1f6;
     max-width: 100%;
+    padding-bottom: 100px;
+}
+.package-heading-wrapper{
+    padding-top: 93px;
+}
+.package-heading-wrapper p{
+    margin-bottom: 0;
 }
 .package-heading-wrapper h3{
     font-weight: 700;
     font-size: 34px;
 }
 .packages-wrapper{
-    padding: 50px 0;
+    padding-top: 50px;
 }
 .package-wrapper{
     padding: 40px;
@@ -21,9 +28,19 @@
 }
 .package-price{
     font-weight: 900;
-    font-size: 30px;
+    font-size: 34px;
     color: #5653b1;
-    padding-top: 10px;
+    
+    
+}
+.price-wrapper {
+  display: flex;
+  align-items: center; 
+}
+.price-range-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .features-list{
     list-style: none;
@@ -33,12 +50,6 @@
 }
 .features-list li{
     margin-bottom: 5px;
-}
-.check-styling{
-    margin-right: 5px;
-    background-color: #eef1f6;
-    border-radius: 50%;
-    padding: 3px;
 }
 .package-image-wrapper img{
     width: 50px;
@@ -53,6 +64,7 @@
 .normal-package .package-button-wrapper a{
     background-color: #fff;
     color: #5653b1;
+    font-weight: bold;
 }
 .package-wrapper.normal-package{
     transition: all 0.3s ease-out 0s;

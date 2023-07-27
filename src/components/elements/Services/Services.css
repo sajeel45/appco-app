@@ -1,11 +1,14 @@
 .services-wrapper{
     background-color: #EEF1F6;
-    padding-bottom: 100px;
     position: relative;
     background-position: 92% 100%;
     background-repeat: no-repeat;
     background-size: auto;
+    padding: 100px 0;
     max-width: 100%;
+}
+.service-items-wrapper{
+    padding-top: 24px;
 }
 .service-item-wrapper{
     background-color: white;
@@ -23,6 +26,7 @@
 }
 .services-content-wrapper h3{
     font-weight: 700;
+    font-size: 34px;
 }
 .service-item-count{
     position: absolute;
@@ -50,13 +54,15 @@
 }
 
 .service-content-wrapper{
-    padding: 25px 0;
+    padding-top: 25px;
 }
 .service-content-wrapper h4{
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
+    
 }
 .service-content-wrapper p{
     text-align: center;
+    font-size: 18px;
 }

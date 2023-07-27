@@ -19,12 +19,14 @@ const Services2 = (props) => {
                         <div className="services2-main-wrapper" key={index}>
                             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true">
                             <div className="service2-wrapper">
-                            <div className="services2-icon-wrapper" style={{color:item.background}}>
+                                <div className="service2-item-wrapper">
+                            <div className="services2-icon-wrapper">
                                 <span>{item.icon}</span>
                             </div>
-                            <div className="services2-content-wrapper">
+                            <div className="services2-content-wrapper text-center">
                                 <h4>{item.title}</h4>
                                 <p>{item.description}</p>
+                            </div>
                             </div>
                         </div>
                         </AnimationOnScroll>

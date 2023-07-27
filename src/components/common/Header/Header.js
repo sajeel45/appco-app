@@ -1,3 +1,4 @@
+import { useState,useEffect } from "react";
 import logo from "../../../assets/logo/logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -7,9 +8,27 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Header.css";
 import { NavLink } from "react-bootstrap";
 
+
+
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="header-wrapper">
+    <div className={`header-wrapper${isScrolled ? " scrolled" : ""}`}>
       <Container>
         <Row>
           <Col sm="12" lg="4" md="6">
@@ -48,6 +67,20 @@ const Header = () => {
                       Features
                     </Link>
                     </NavLink>
+                    <NavDropdown title="Team" id="basic-nav-dropdown" as="li">
+                      <NavDropdown.Item href="#home1" className="nav-link">
+                        <Link to="/Benjamin" className="nav-link-style nav-link"><span>Benjamin Element</span></Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#home2" className="nav-link">
+                        <Link to="/Ellen" className="nav-link-style nav-link"><span>Ellen Erye</span></Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item className="nav-link">
+                      <Link to="/Bryan" className="nav-link-style nav-link"><span>Bryan Gill</span></Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#home4" className="nav-link">
+                      <Link to="/Amelia" className="nav-link-style nav-link"><span>Amelia Harper</span></Link>
+                      </NavDropdown.Item>
+                    </NavDropdown>
                     <NavLink className="nav-link">
                       <Link to="/Pricing" className="nav-link-style">Pricing</Link>
                     </NavLink>

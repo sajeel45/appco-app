@@ -8,9 +8,15 @@
     background-color: white;
     max-width: 100%;
 }
+.header-wrapper.scrolled {
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.0588235294);
+  }
 .nav-link-style{
     color: black;
     text-decoration: none ;
+}
+.nav-link{
+    margin-right: 10px;
 }
 .nav-item-link>p{
     color: black;
@@ -23,6 +29,7 @@
 }
 .nav-dropdown-link > li >a{
     color: black;
+    margin-right: 10px;
 }
 .nav-dropdown-link > li >a:hover{
     color: black;

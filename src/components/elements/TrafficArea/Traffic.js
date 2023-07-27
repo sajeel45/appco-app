@@ -11,10 +11,9 @@ const trafficArea = (props) => {
   return (
     <div className="traffic-area-wrapper">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col lg="7">
             <div className="traffic-area-text-wrapper">
-              <span>Traffic</span>
               <h3 class="title">Stage reporting with 50k queries.</h3>
               <p>
                 He nicked it tickety boo harry the cras bargy chap mush spiffing

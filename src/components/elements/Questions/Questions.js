@@ -8,11 +8,11 @@ import "./Questions.css";
 const questions = (props) => {
   const questions = props.questions;
   return (
-    <div className="questions-section-wrapper pt-5 pb-5" style={{backgroundImage: `url(${faqShape})`}}>
+    <div className="questions-section-wrapper pb-5" style={{backgroundImage: `url(${faqShape})`}}>
       <Container>
         <Row className="flex-column">
           <Col>
-            <div className="questions-heading-wrapper pb-5 text-center">
+            <div className="questions-heading-wrapper text-center">
               <h3>Frequently asked questions</h3>
               <p>Different layouts and styles for team sections.</p>
             </div>

@@ -1,9 +1,12 @@
+.project-area-wrapper{
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
 .project-section-wrapper{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-left: 70px;
-    padding-top: 75px;
+    padding: 70px 70px 0 70px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;

@@ -11,7 +11,7 @@ const services = (props) => {
             <Container>
                 <Row>
                     <Col lg="12" md="12" sm="12" className="text-center" >
-            <div className="services-content-wrapper pt-5 pb-5">
+            <div className="services-content-wrapper">
                 <h3>
                     Designed with.
                     <br />
@@ -25,6 +25,7 @@ const services = (props) => {
             {services.map((item,index)=>(
                 <Col lg="3" md="6" sm="12">
                     <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true">
+                        <div className="service-items-wrapper">
                     <div className="service-item-wrapper" key={index}>
                         <div className="service-icon-wrapper">
                             <span>{item.icon}</span>
@@ -35,6 +36,7 @@ const services = (props) => {
                             <h4 className="text-align-center">{item.title}</h4>
                             <p className="text-align-center">{item.description}</p>
                         </div>
+                    </div>
                     </div>
                     </AnimationOnScroll>
                 </Col>

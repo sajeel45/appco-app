@@ -4,9 +4,36 @@
     background-repeat: no-repeat;
     padding: 100px 0;
     max-width: 100%;
+    position: relative;
+}
+.pricing-page-content-wrapper ul{
+    display: flex;
+    padding-left: 0;
+
+}
+.pricing-page-content-wrapper ul li{
+    color: white;
+    list-style: none;
+    margin-right: 10px;
+    
+}
+.pricing-page-content-wrapper ul li a{
+    text-decoration: none;
+    color: white;
+}
+.pricing-page-content-wrapper::before{
+    background: rgba(0,0,0,.52);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
 }
 .pricing-content{
     padding: 50px 0;
+    position: relative;
 }
 .pricing-content h3{
     font-weight: 800;

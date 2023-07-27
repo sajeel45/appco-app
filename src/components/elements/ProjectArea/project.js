@@ -8,6 +8,7 @@ import "./project.css";
 
 const project = () =>{
     return(
+        <div className="project-area-wrapper">
         <Container>
             <Row>
                 <Col lg="12">
@@ -53,7 +54,7 @@ const project = () =>{
                 
         
         </Container>
-        
+        </div>
         )
     
 }

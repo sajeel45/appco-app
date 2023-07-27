@@ -9,14 +9,18 @@
 .blog-wrapper{
     padding: 20px 0;
 }
+.blogs-upper-content{
+    padding-bottom: 7px;
+}
 .blogs-upper-content h3{
     font-weight: 900;
     font-size: 44px;
 }
 .blog-content-wrapper h3{
-    font-weight: 500;
-    font-size: 24px;
-
+    font-weight: 900;
+    font-size: 34px;
+    padding-left: 8px;
+    line-height: 0.2;
 }
 .blog-content-wrapper{
     padding: 10px 0;
@@ -24,6 +28,9 @@
 .blog-content-wrapper a{
     text-decoration: none;
     color: black;
+}
+.blog-content-wrapper h3 a{
+    font-size: 24px;
 }
 .blog-content-wrapper a:hover{
     color: #393691;
@@ -45,14 +52,16 @@
     transform: scale(1.1);
     overflow: hidden;
 } */
-.blog-wrapper a.secondary-btn:hover{
-    background: transparent;
-    color: #393691;
-    border: 0px;
+.blog-button{
+    margin-left: 8px;
 }
 .blog-button a{
-    padding: 5px;
-    border: 0px;
+    padding: 10px;
+    border: 2px solid #393691;
+}
+.blog-button a:hover{
+    background-color: #393691;
+    color: white;
 }
 .list{
     order: 1;

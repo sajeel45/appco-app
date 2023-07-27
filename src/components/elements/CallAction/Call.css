@@ -1,0 +1,38 @@
+.call-to-action-wrapper{
+    background-color: #111A3ABF;
+    opacity: 1;
+    padding: 100px 0;
+    margin-bottom: 100px;
+}
+.call-to-action-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.call-to-action-content-wrapper h2{
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.call-to-action-content-wrapper p{
+    color: white;
+}
+.call-to-action-button{
+    margin-top: 30px;
+}
+.call-to-action-button a{
+    background-color: #5653b1;
+    padding: 15px 25px;
+    
+}
+.call-to-action-button a:hover{
+    color: #5653b1;
+    background-color: white;
+}
+.call-to-action-button a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}

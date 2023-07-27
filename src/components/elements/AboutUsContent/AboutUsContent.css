@@ -30,17 +30,20 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.about-us-buton-style{
-    padding: 10px 15px;
-    border: 1px solid white;
+.about-us-button-wrapper{
+    margin-top: 30px;
+}
+.about-us-button-wrapper a{
+    padding: 15px 30px;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    transition: all .5s ease-out 0s;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
 }
-.about-us-buton-style:hover{
-    background-color: white;
+.about-us-button-wrapper a:hover{
     color: #5653b1;
+    background-color: white;
 }
 .arrow-style{
     color: white;

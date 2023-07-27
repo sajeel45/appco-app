@@ -1,0 +1,43 @@
+.testimonial-upper-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+.testimonial-upper-content-wrapper h3{
+    font-weight: 900;
+    font-size: 44px;
+}
+.testimonial-upper-content-wrapper h2{
+    font-weight: 900;
+    font-size: 44px;
+}
+.testimonial-upper-content-wrapper h2 span{
+    font-size: 44px;
+    color: #5653b1;
+}
+.testimonial-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #eee;
+}
+.testimonial-image-wrapper img{
+    border-radius: 50%;
+}
+.testimonials-wrapper{
+    padding-top:100px;
+}
+.testimonial-content-wrapper{
+    padding-top: 50px;
+}
+.stars-wrapper span{
+    margin-right: 5px;
+}
+.testi-name-wrapper h5{
+    font-weight: 700;
+}
+.testi-skill-wrapper span{
+    color: #5653b1;
+
+}

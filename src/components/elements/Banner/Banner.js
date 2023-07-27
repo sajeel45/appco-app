@@ -19,8 +19,8 @@ const Banner = (props) =>{
     return(
         <div className="banner-wrapper">
             <Container>
-                <Row className="align-items-center">
-                    <Col lg="8" md="6" sm="6">
+                <Row className="align-items-center justify-content-space-between">
+                    <Col lg="7" md="6" sm="6">
                         <div className="banner-text-wrap">
                             <div className="banner-upper-text-wrapper">
                             <h4>Secure & IT Services</h4> 
@@ -34,7 +34,7 @@ const Banner = (props) =>{
                             </div>
                         </div>
                     </Col>
-                    <Col lg="4" md="6" sm="6">
+                    <Col lg="5" md="6" sm="6">
                         <div className="hero-thumbs-wrapper">
                         <div className="hero-thumb">
                             <img src={heroThumb} alt="heroThumb"/>

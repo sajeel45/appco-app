@@ -10,7 +10,7 @@ const ThreeColumnPage = () =>{
         <div>
             <Header />
             <ThreeColumn twoBlogs={twoBlogs} />
-            <Footer helpLinks={helpLinks} />
+            <Footer helpLinks={helpLinks} marginTop="3rem"/>
         </div>
     )
 };

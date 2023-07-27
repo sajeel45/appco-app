@@ -19,6 +19,7 @@ const Team = (props) => {
                     </Col>
                     {teamMembers.map((item,index)=>(
                     <Col lg="3" md="6" sm="12">
+                        <div className="team-members-wrapper">
                         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true">
                         <div className="team-member-wrapper" key={index}>
                             <div className="team-member-image-wrapper">
@@ -27,7 +28,7 @@ const Team = (props) => {
                             <div className="team-member-content-wrapper text-center pt-3">
                                 <h5>{item.name}</h5>
                                 <span>{item.designation}</span>
-                                <div className="team-member-social-links pt-3 pb-3">
+                                <div className="team-member-social-links pt-5 pb-3">
                                 <ul>
                                     <li><Link to="https://www.linkedin.com/in/muhammad-sajeel-34405b221/"><FaLinkedin color="white"/></Link></li>
                                     <li><Link to="#"><FaTwitter color="white"/></Link></li>
@@ -37,6 +38,7 @@ const Team = (props) => {
                             </div>
                         </div>
                         </AnimationOnScroll>
+                        </div>
                     </Col>
                     ))}
                 </Row>

@@ -1,13 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
-import servicebg from "../../../assets/servicePage/page-title-bg.jpg";
-import serviceThumb from "../../../assets/servicePage/fun-fact-thumb.png";
+import serviceThumb from "../../../assets/contact/contact-thumb.jpg";
+import { Link } from "react-router-dom";
+import { FaChevronRight } from "react-icons/fa";
 import "./ServicePage.css";
 
 const ServicePage = () => {
   return (
     <div
       className="service-page-wrapper"
-      style={{ backgroundImage: `url(${servicebg})` }}
+      style={{backgroundImage: `url(${serviceThumb})`}}
     >
       <Container>
         <Row>
@@ -17,13 +18,13 @@ const ServicePage = () => {
                 <h3>
                 Simple but effective, <br /> effortless yet powerful.
                 </h3>
+                <ul>
+                  <li><Link to="/" className="">Home</Link></li>
+                  <li><FaChevronRight color="white"/></li>
+                  <li>Services</li>
+                </ul>
             </div>
             
-          </Col>
-          <Col lg="6" md="6" sm="12">
-          <div className="service-page-thumb">
-                <img src={serviceThumb} alt="service-thumb"/>
-            </div>
           </Col>
         </Row>
       </Container>

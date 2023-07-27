@@ -28,10 +28,10 @@ const Blogs = (props) => {
                             <li><a>{item.meta1}</a></li>
                             <li><a>{item.meta2}</a></li>
                         </ul>
-                        <h3><a href="#">{item.title}</a></h3>
+                        <h3><Link to={item.link}>{item.title}</Link></h3>
                     </div>
                     <Col className="blog-button">
-                    <Link className="secondary-btn " href="#"><span className="m-1"><FaArrowRight /></span>Learn More</Link>
+                    <Link className="secondary-btn " to={item.link}><span className="m-1"><FaArrowRight /></span>Learn More</Link>
                     </Col>
                 </div>
           </Col>

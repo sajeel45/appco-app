@@ -1,6 +1,8 @@
 import image1 from "../assets/Banner/slider-img2.png";
 import image2 from "../assets/Banner/slider-img3.png";
-import user from "../assets/feedback/user.png";
+import user1 from "../assets/feedback/customer1.jpeg";
+import user2 from "../assets/feedback/customer2.jpeg";
+import user3 from "../assets/feedback/customer3.jpeg";
 import team1 from "../assets/team/team-1.jpg";
 import team2 from "../assets/team/team-2.jpg";
 import team3 from "../assets/team/team-3.jpg";
@@ -21,9 +23,12 @@ import sponsor7 from "../assets/sponsors/sponser-7.png";
 import sponsor8 from "../assets/sponsors/sponser-8.png";
 import sponsor9 from "../assets/sponsors/sponser-9.png";
 import sponsor10 from "../assets/sponsors/sponser-10.png";
+import testi1 from "../assets/Testimonials/testi1.jpg";
+import testi2 from "../assets/Testimonials/testi2.jpg";
+import testi3 from "../assets/Testimonials/testi3.jpg";
 import {FaHeadphones,FaLock,FaSmile,FaSearch,FaCheck,FaTv,
-    FaCode,FaUserFriends,FaMobile,FaRetweet,FaBell,FaHome,FaTag,FaBookmark,FaGlobe
-,FaEnvelope,FaPhone} from "react-icons/fa";
+    FaCode,FaUserFriends,FaMobile,FaRetweet,FaBell,FaGlobe
+,FaEnvelope,FaPhone,FaStopwatch,FaFileWord,FaChartBar,FaAndroid,FaDesktop,FaBullseye, FaChevronRight} from "react-icons/fa";
 
 
 const bannerItems = [
@@ -101,21 +106,21 @@ const trafficItems = [
 const feedbacks = [
     {
         id:1,
-        img:user,
+        img:user1,
         name:"Jason Response",
         date:"April 14,2022.",
         feedback:"Why I say old chap that is spiffing lurgy Oxford cracking goal bleeder, bog-standard Harry brilliant mush a blinding shot starkers."
     },
     {
         id:2,
-        img:user,
+        img:user2,
         name:"Jason Response",
         date:"April 14,2022.",
         feedback:"Why I say old chap that is spiffing lurgy Oxford cracking goal bleeder, bog-standard Harry brilliant mush a blinding shot starkers."
     },
     {
         id:3,
-        img:user,
+        img:user3,
         name:"Jason Response",
         date:"April 14,2022.",
         feedback:"Why I say old chap that is spiffing lurgy Oxford cracking goal bleeder, bog-standard Harry brilliant mush a blinding shot starkers."
@@ -154,6 +159,7 @@ const blogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"17 Effective Ways to Monetize Mobile Apps",
+        link:"/Blog1"
     },
     {
         id:2,
@@ -161,6 +167,7 @@ const blogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"How to bring Dolce to your company",
+        link:"/Blog2"
     },
     {
         id:3,
@@ -168,6 +175,7 @@ const blogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
+        link:"/Blog3"
     },
 ];
 const packages = [
@@ -209,28 +217,6 @@ const packages = [
         feature6:"Event Analytics",
     },
 ];
-const packagesFeatures = [
-    {
-        id:1,
-        features:[
-        
-               "60-day chat history",
-              "15 GB cloud storage"
-        ]
-    },
-    {
-        id:2,
-        features:[
-            "60-day chat history","50 GB cloud storage","24/7 Support"
-        ]
-    },
-    {
-        id:3,
-        features:[
-            "60-day chat history","Data security","100 GB cloud storage","24/7 Support"
-        ]
-    }
-]
 const questions = [
     {
         id:1,
@@ -257,59 +243,64 @@ const helpLinks = [
     {
         id:1,
         link:'Customer Services',
+        route:'/Services'
     },
     {
         id:2,
         link:'IT Department',
+        route:'/Services'
     },
     {
         id:3,
         link:'About Our Company',
+        route:'/AboutUs'
     },
     {
         id:4,
         link:'Business Growth',
+        route:'/Pricing'
     },
     {
         id:5,
         link:'Make an Appointment',
+        route:'/Contact'
     }
 ];
 const services2 = [
     {
         id:1,
-        icon:<FaTv color="#f8452d"/>,
+        icon:<FaTv size="30px" color="#5653b1"/>,
         title:"Carefully Designed",
         description:"He lost his bottle loo don't get shirty with me ruddy.",
         background:"#2b70fa"
     },
     {
         id:2,
-        icon:<FaCode color="#db0f30"/>,
+        icon:<FaCode size="30px" color="#5653b1"/>,
         title:"Clean Modern Code",
         description:"He lost his bottle loo don't get shirty with me ruddy."
     },
     {
         id:3,
-        icon:<FaUserFriends color="#f8452d"/>,
+        icon:<FaUserFriends size="30px" color="#5653b1"/>,
         title:"User Interactive",
         description:"He lost his bottle loo don't get shirty with me ruddy."
     },
     {
         id:4,
-        icon:<FaMobile color="#db0f30"/>,
+        icon:<FaMobile size="30px" color="#5653b1"/>,
         title:"Choose an App",
         description:"He lost his bottle loo don't get shirty with me ruddy."
     },
     {
         id:5,
-        icon:<FaRetweet color="#db0f30"/>,
+        icon:<FaRetweet size="30px" color="#5653b1"/>,
         title:"Seamless Sync",
         description:"He lost his bottle loo don't get shirty with me ruddy."
     },
     {
         id:6,
-        icon:<FaBell color="#db0f30"/>,
+        icon:<FaBell size="30px" color="#5653b1"/>,
         title:"Notification Settings",
         description:"He lost his bottle loo don't get shirty with me ruddy."
     }
@@ -357,35 +348,6 @@ const sponsors = [
     }
 
 ];
-const detailsItems = [
-    {
-        id:1,
-        icon:<FaHome color="#5754B1"/>,
-        caption:"Fast Development"
-    },
-    {
-        id:2,
-        icon:<FaTag color="#5754B1"/>,
-        caption:"App, UX"
-    },
-    {
-        id:3,
-        icon:<FaUserFriends color="#5754B1"/>,
-        caption:"20-30 Employees"
-    },
-    {
-        id:4,
-        icon:<FaBookmark color="#5754B1"/>,
-        caption:"Appie Template"
-    },
-    {
-        id:5,
-        icon:<FaGlobe color="#5754B1"/>,
-        caption:"quomodosoft.com/appie"
-        
-    },
-
-];
 const addressInfo = [
     {
         id:1,
@@ -414,6 +376,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"17 Effective Ways to Monetize Mobile Apps",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+        link:"/Blog1"
     },
     {
         id:2,
@@ -421,6 +385,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"How to bring Dolce to your company",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+        link:"/Blog2"
     },
     {
         id:3,
@@ -428,6 +394,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+        link:"/Blog3"
     },
     {
         id:4,
@@ -435,6 +403,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"17 Effective Ways to Monetize Mobile Apps",
+        link:"/Blog1",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …"
     },
     {
         id:5,
@@ -442,6 +412,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"How to bring Dolce to your company",
+        link:"/Blog2",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …"
     },
     {
         id:6,
@@ -449,6 +421,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
+        link:"/Blog3",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …"
     },
     {
         id:7,
@@ -456,6 +430,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"17 Effective Ways to Monetize Mobile Apps",
+        link:"/Blog1",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …"
     },
     {
         id:8,
@@ -463,6 +439,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"How to bring Dolce to your company",
+        link:"/Blog2",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …"
     },
     {
         id:9,
@@ -470,6 +448,8 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
+        link:"/Blog3",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …"
     },
     {
         id:10,
@@ -477,10 +457,242 @@ const twoBlogs = [
         meta1:"Saas & App",
         meta2:"April 14,2022",
         title:"Introducing New Apps Design for our iOS App",
+        link:"/Blog1",
+        description:"Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …"
     },
 ];
-
-
+const servicesItems = [
+    {
+        id:1,
+        icon:<FaStopwatch color="#5653b1" size="50px"/>,
+        title:"UX/UI Design",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    },
+    {
+        id:2,
+        icon:<FaFileWord color="#5653b1" size="50px"/>,
+        title:"Web Development",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    },
+    {
+        id:3,
+        icon:<FaChartBar color="#5653b1" size="50px"/>,
+        title:"QA & Testing",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    },
+    {
+        id:4,
+        icon:<FaAndroid color="#5653b1" size="50px"/>,
+        title:"UX/UI Design",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    },
+    {
+        id:5,
+        icon:<FaDesktop color="#5653b1" size="50px"/>,
+        title:"Web Development",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    },
+    {
+        id:6,
+        icon:<FaBullseye color="#5653b1" size="50px"/>,
+        title:"QA & Testing",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    },
+    {
+        id:7,
+        icon:<FaStopwatch color="#5653b1" size="50px"/>,
+        title:"UX/UI Design",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    },
+    {
+        id:8,
+        icon:<FaDesktop color="#5653b1" size="50px"/>,
+        title:"Web Development",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    },
+    {
+        id:9,
+        icon:<FaChartBar color="#5653b1" size="50px"/>,
+        title:"QA & Testing",
+        description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
+    }
+];
+const testimonials = [
+    {
+        id:1,
+        img:testi1,
+        feedback:"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua",
+        name:"John Abraham",
+        skill:"Web Developer"
+    },
+    {
+        id:2,
+        img:testi2,
+        feedback:"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua",
+        name:"John Dome",
+        skill:"App Developer"
+    },
+    {
+        id:3,
+        img:testi3,
+        feedback:"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua",
+        name:"Ellen Erye",
+        skill:"Web Developer"
+    }
+];
+const recentBlogs = [
+    {
+        id:1,
+        title:"How to bring Dolce to your company?Read Out More",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog2",
+        border:<hr />
+    },
+    {
+        id:2,
+        title:"Introducing New Apps Design for our iOS App",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog3",
+        border:<hr />
+    },
+    {
+        id:3,
+        title:"How to bring Dolce to your company?Read Out More",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog2",
+        border:<hr />
+    },
+    {
+        id:4,
+        title:"Introducing New Apps Design for our iOS App",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog3",
+        border:<hr />
+    },
+    {
+        id:5,
+        title:"How to bring Dolce to your company?Read Out More",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog2"
+    }
+];
+const recentBlogs2 = [
+    {
+        id:1,
+        title:"17 Effective Ways to Monetize Mobile Apps",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog1",
+        border:<hr />
+    },
+    {
+        id:2,
+        title:"Introducing New Apps Design for our iOS App",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog3",
+        border:<hr />
+    },
+    {
+        id:3,
+        title:"17 Effective Ways to Monetize Mobile Apps",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog1",
+        border:<hr />
+    },
+    {
+        id:4,
+        title:"Introducing New Apps Design for our iOS App",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog3",
+        border:<hr />
+    },
+    {
+        id:5,
+        title:"17 Effective Ways to Monetize Mobile Apps",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog1"
+    }
+];
+const recentBlogs3 = [
+    {
+        id:1,
+        title:"17 Effective Ways to Monetize Mobile Apps",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog1",
+        border:<hr />
+    },
+    {
+        id:2,
+        title:"How to bring Dolce to your company?Read Out More",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog2",
+        border:<hr />
+    },
+    {
+        id:3,
+        title:"17 Effective Ways to Monetize Mobile Apps",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog1",
+        border:<hr />
+    },
+    {
+        id:4,
+        title:"How to bring Dolce to your company?Read Out More",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog2",
+        border:<hr />
+    },
+    {
+        id:5,
+        title:"17 Effective Ways to Monetize Mobile Apps",
+        icon:<FaChevronRight color="#5653b1"/>,
+        link:"/Blog1"
+    }
+];
+const categories = [
+    {
+        id:1,
+        category:"Mobile App Monetization",
+        spacing:<hr />
+    },
+    {
+        id:2,
+        category:"App Revenue Generation",
+        spacing:<hr />
+    },
+    {
+        id:3,
+        category:"Business Development",
+        spacing:<hr />
+    },
+    {
+        id:4,
+        category:"Partnership and Collaboration",
+        spacing:<hr />
+    },
+    {
+        id:5,
+        category:"Mobile App Design",
+        spacing:<hr />
+    },
+    {
+        id:6,
+        category:"App Update and Redesign",
+    },   
+];
+const tags = [
+    {
+        id:1,
+        tag:"Mobile Apps",
+    },
+    {
+        id:2,
+        tag:"Monetization",
+    },
+    {
+        id:1,
+        tag:"Business",
+    }
+];
 export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,
-    packages,questions,packagesFeatures,helpLinks,services2,sponsors,detailsItems,addressInfo
-,twoBlogs}; 
+    packages,questions,helpLinks,services2,sponsors,addressInfo
+,twoBlogs,servicesItems,testimonials,recentBlogs,recentBlogs2,recentBlogs3,categories,tags}; 
