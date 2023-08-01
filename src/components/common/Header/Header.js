@@ -42,20 +42,9 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto nav-dropdown-link">
-                    <NavDropdown title="Home" id="basic-nav-dropdown" as="li">
-                      <NavDropdown.Item href="#home1" className="nav-link">
-                        <Link to="/" className="nav-link-style nav-link"><span>Home 1</span></Link>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#home2" className="nav-link">
-                        <Link to="/" className="nav-link-style nav-link"><span>Home 2</span></Link>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item className="nav-link">
-                      <Link to="/" className="nav-link-style nav-link"><span>Home 3</span></Link>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#home4" className="nav-link">
-                      <Link to="/" className="nav-link-style nav-link"><span>Home 4</span></Link>
-                      </NavDropdown.Item>
-                    </NavDropdown>
+                  <NavLink href="#"  className="nav-link">
+                      <Link to="/" className="nav-link-style">Home</Link>
+                    </NavLink >
                     <NavLink href="#"  className="nav-link">
                       <Link to="/AboutUs" className="nav-link-style">About</Link>
                     </NavLink >
@@ -68,8 +57,11 @@ const Header = () => {
                     </Link>
                     </NavLink>
                     <NavDropdown title="Team" id="basic-nav-dropdown" as="li">
+                    <NavDropdown.Item href="#home1" className="nav-link">
+                        <Link to="/Team" className="nav-link-style nav-link"><span>Our Dedicated Team</span></Link>
+                      </NavDropdown.Item>
                       <NavDropdown.Item href="#home1" className="nav-link">
-                        <Link to="/Benjamin" className="nav-link-style nav-link"><span>Benjamin Element</span></Link>
+                        <Link to="/Benjamin" className="nav-link-style nav-link"><span>Benjamin Evalent</span></Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#home2" className="nav-link">
                         <Link to="/Ellen" className="nav-link-style nav-link"><span>Ellen Erye</span></Link>
@@ -96,6 +88,9 @@ const Header = () => {
                       </NavDropdown.Item>
                       <NavDropdown.Item>
                       <Link to="/Pricing" className="nav-link nav-link-style"><span>Pricing</span></Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item>
+                      <Link to="/error" className="nav-link nav-link-style"><span>404 Page</span></Link>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="Blogs" as="li" id="basic-nav-dropdown">

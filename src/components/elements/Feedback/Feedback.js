@@ -17,7 +17,7 @@ const feedback = (props) => {
   };
   return (
     <div
-      className="feedback-wrapper"
+      className="feedback-section-wrapper"
       style={{ backgroundImage: `url(${feedbackBg})` }}
     >
       <Container>

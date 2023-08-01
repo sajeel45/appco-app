@@ -1,13 +1,44 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { FaStar } from "react-icons/fa";
 import "./Testimonials.css";
 
 const Testimonials = (props) => {
     const testimonials = props.testimonials;
+    var settings = {
+      dots:true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll:3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll:3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+        {
+          breakpoint: 425,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+
+    }
   return (
-    <div className="testimonial-section-wrapper">
+    <div className="testimonial-section-wrapper" style={{paddingBottom:props.paddingBottom}}>
       <Container>
         <Row>
           <Col lg="12" md="12" sm="12">
@@ -20,9 +51,12 @@ const Testimonials = (props) => {
             </div>
            
           </Col>
+          <Slider {...settings}>
           {testimonials.map((item,index)=>(
-            <Col lg="4" md="6" sm="12">
+            
+               
               <div className="testimonials-wrapper">
+                
                 <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
                 <div className="testimonial-wrapper"  key={index}>
                     <div className="testimonial-image-wrapper">
@@ -48,10 +82,11 @@ const Testimonials = (props) => {
                     </div>
                 </div>
                 </AnimationOnScroll>
+                
                 </div>
-                </Col>
                 
                 ))}
+        </Slider>
         </Row>
       </Container>
     </div>

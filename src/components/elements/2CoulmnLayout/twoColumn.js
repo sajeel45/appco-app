@@ -1,4 +1,6 @@
 import { Container,Row,Col } from "react-bootstrap";
+import { useEffect,useState } from "react";
+import ReactPaginate from 'react-paginate';
 import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight,FaArrowRight } from "react-icons/fa";

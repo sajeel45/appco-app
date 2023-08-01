@@ -12,7 +12,7 @@ const trafficArea = (props) => {
     <div className="traffic-area-wrapper">
       <Container>
         <Row className="align-items-center">
-          <Col lg="7">
+          <Col lg="6">
             <div className="traffic-area-text-wrapper">
               <h3 class="title">Stage reporting with 50k queries.</h3>
               <p>
@@ -44,7 +44,7 @@ const trafficArea = (props) => {
               </Col>
             </Row>
           </Col>
-          <Col lg="5">
+          <Col lg="6">
             <AnimationOnScroll
               animateIn="animate__fadeInRight"
               animateOnce="true"

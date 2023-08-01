@@ -2,9 +2,9 @@ import { Container,Row,Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Call.css";
 
-const Call = () => {
+const Call = (props) => {
     return(
-        <div className="call-to-action-wrapper">
+        <div className="call-to-action-wrapper" style={{margin:props.margin}}>
             <Container>
                 <Row>
                     <Col lg="12">

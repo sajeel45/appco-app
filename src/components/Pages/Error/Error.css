@@ -1,0 +1,26 @@
+.error-page-wrapper{
+    padding: 200px 0;
+}
+.error-image-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.error-content-wrapper span{
+    display: block;
+    font-size: 50px;
+    color: #db0f30;
+    font-weight: 800;
+    padding-top: 40px;
+    text-align: center;
+}
+.error-return-button{
+    display: flex;
+    justify-content: center;
+}
+.error-return-button a{
+    color: black;
+    padding: 10px 25px;
+    border: 1px solid slateblue;
+    text-decoration: none;
+    border-radius: 6px;
+}    

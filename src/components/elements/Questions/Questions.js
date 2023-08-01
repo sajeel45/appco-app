@@ -1,14 +1,17 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Accordion } from "react-bootstrap";
+import { FaQuestion, FaQuestionCircle } from "react-icons/fa";
 import faqShape from "../../../assets/questions/faq-shape.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
 import "./Questions.css";
 
-
-const questions = (props) => {
+const Questions = (props) => {
   const questions = props.questions;
   return (
-    <div className="questions-section-wrapper pb-5" style={{backgroundImage: `url(${faqShape})`}}>
+    <section
+      className="questions-section-wrapper pb-5"
+      style={{ backgroundImage: `url(${faqShape})` }}
+    >
       <Container>
         <Row className="flex-column">
           <Col>
@@ -18,26 +21,38 @@ const questions = (props) => {
             </div>
           </Col>
           <Row>
-          {questions.map((item,index)=>(
-          <Col lg="6" md="12" sm="12">
-            <div className="questions-section-main-wrapper" key={index}>
-              <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
-                <div className="questions-content-wrapper">
-                <div className="question-wrapper">
-                    <h4>{item.question}</h4>
+            {questions.map((item, index) => (
+              <Col lg="12" md="12" sm="12">
+                <div className="faq-wrapper">
+                <Accordion
+                  className="questions-section-main-wrapper"
+                  defaultActiveKey={0}
+                >
+                  <AnimationOnScroll
+                    animateIn="animate__fadeIn"
+                    animateOnce="true"
+                  >
+                    <Accordion.Item
+                      className="questions-content-wrapper"
+                      eventKey="0"
+                    >
+                      <Accordion.Header className="question-wrapper">
+                        <h4>{item.question}</h4>
+                      </Accordion.Header>
+                      <Accordion.Body className="answer-wrapper">
+                        <p>{item.answer}</p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </AnimationOnScroll>
+                </Accordion>
                 </div>
-                <div className="answer-wrapper">
-                    <p>{item.answer}</p>
-                </div>
-                </div>
-                </AnimationOnScroll>
-            </div>
-          </Col>
-          ))}
+              </Col>
+              
+            ))}
           </Row>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
-export default questions;
+export default Questions;

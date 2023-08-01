@@ -4,8 +4,8 @@
 .about-us-top-title-wrapper {
     position: relative;
 }
-.about-us-top-title-wrapper .title{
-    font-size: 60px;
+.about-us-top-title-wrapper .title {
+    font-size: 54px;
 }
 .about-us-top-title-wrapper h2::before{
     position: absolute;

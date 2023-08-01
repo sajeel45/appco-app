@@ -136,19 +136,69 @@ const teamMembers = [
     {
         id:2,
         src:team2,
-        name:"Benjamin Evalent",
+        name:"Ellen Erye",
         designation:"CEO-Founder"
     },
     {
         id:3,
         src:team3,
-        name:"Benjamin Evalent",
+        name:"Bryan Gill",
         designation:"CEO-Founder"
     },
     {
         id:4,
         src:team4,
+        name:"Amelia Harper",
+        designation:"CEO-Founder"
+    }
+];
+const teamMembers2 = [
+    {
+        id:1,
+        src:team1,
         name:"Benjamin Evalent",
+        designation:"CEO-Founder"
+    },
+    {
+        id:2,
+        src:team2,
+        name:"Ellen Erye",
+        designation:"CEO-Founder"
+    },
+    {
+        id:3,
+        src:team3,
+        name:"Bryan Gill",
+        designation:"CEO-Founder"
+    },
+    {
+        id:4,
+        src:team4,
+        name:"Amelia Harper",
+        designation:"CEO-Founder"
+    },
+    {
+        id:5,
+        src:team1,
+        name:"Benjamin Evalent",
+        designation:"CEO-Founder"
+    },
+    {
+        id:6,
+        src:team2,
+        name:"Ellen Erye",
+        designation:"CEO-Founder"
+    },
+    {
+        id:7,
+        src:team3,
+        name:"Bryan Gill",
+        designation:"CEO-Founder"
+    },
+    {
+        id:8,
+        src:team4,
+        name:"Amelia Harper",
         designation:"CEO-Founder"
     }
 ];
@@ -220,23 +270,23 @@ const packages = [
 const questions = [
     {
         id:1,
-        question:"Where do I usually find FAQs in a page?",
-        answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
+        question:"What is mobile app monetization?",
+        answer:"Mobile app monetization refers to the process of generating revenue from a mobile application. It involves implementing strategies and techniques to earn money from users, such as through in-app purchases, ads, subscriptions, or other revenue models."
     },
     {
         id:2,
-        question:"Where do I usually find FAQs in a page?",
-        answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
+        question:"How can I monetize my mobile app effectively?",
+        answer:"There are several effective ways to monetize your mobile app, including offering in-app purchases, running targeted advertisements, implementing a freemium model, launching a subscription plan, using affiliate marketing, and exploring sponsorship opportunities, among others. Our guide covers 17 proven strategies to help you maximize your app's revenue potential."
     },
     {
         id:3,
-        question:"Where do I usually find FAQs in a page?",
-        answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
+        question:"Is it possible to monetize a free app?",
+        answer:"Absolutely! Many successful apps monetize effectively, even if they are initially offered for free on app stores. The key is to incorporate revenue-generating features such as in-app purchases, ads, or premium content that users can unlock through purchases."
     },
     {
         id:4,
-        question:"Where do I usually find FAQs in a page?",
-        answer:"Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie."
+        question:"What are the best practices for app monetization without compromising the user experience?",
+        answer:"Balancing app monetization with a positive user experience is crucial. Some best practices include using non-intrusive ads, offering valuable incentives for in-app purchases, ensuring clear communication about subscription plans, and regularly seeking user feedback to improve your monetization approach."
     },
 ];
 const helpLinks = [
@@ -517,6 +567,33 @@ const servicesItems = [
         description:"Nullam tincidunt augue eget densis volu tpat, vitae ultri ces lectus and posuere. Duis urna lacus."
     }
 ];
+const achievements = [
+    {
+        id:1,
+        achievement:"1200",
+        symbol:"+",
+        title:"Completed Project"
+    },
+    {
+        id:2,
+        achievement:"1390",
+        symbol:"+",
+        title:"Running Project"
+    }
+    ,
+    {
+        id:3,
+        achievement:"400",
+        symbol:"+",
+        title:"Award Win"
+    },
+    {
+        id:4,
+        achievement:"10",
+        symbol:"K",
+        title:"Satisfied Customers"
+    }
+];
 const testimonials = [
     {
         id:1,
@@ -534,6 +611,27 @@ const testimonials = [
     },
     {
         id:3,
+        img:testi3,
+        feedback:"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua",
+        name:"Ellen Erye",
+        skill:"Web Developer"
+    },
+    {
+        id:4,
+        img:testi1,
+        feedback:"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua",
+        name:"John Abraham",
+        skill:"Web Developer"
+    },
+    {
+        id:5,
+        img:testi2,
+        feedback:"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua",
+        name:"John Dome",
+        skill:"App Developer"
+    },
+    {
+        id:6,
         img:testi3,
         feedback:"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod. tempor incididunt ut labore et dolore magna aliqua",
         name:"Ellen Erye",
@@ -695,4 +793,5 @@ const tags = [
 ];
 export {bannerItems,services,trafficItems,feedbacks,teamMembers,blogs,
     packages,questions,helpLinks,services2,sponsors,addressInfo
-,twoBlogs,servicesItems,testimonials,recentBlogs,recentBlogs2,recentBlogs3,categories,tags}; 
+,twoBlogs,servicesItems,testimonials,recentBlogs,recentBlogs2,
+recentBlogs3,categories,tags,achievements,teamMembers2}; 

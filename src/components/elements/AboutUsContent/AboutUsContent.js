@@ -14,7 +14,7 @@ const AboutUsContent = () =>{
             <h3>Join our team to create the best digital solutions.</h3>
             <p>He nicked it up the duff a load of old tosh bleeder butty bugger all mate cheeky bugger bodge tickety boo, mush well Richard geeza buggered haggle david you mug I, such a fibber my good sir knackered down the pub baking cakes chancer golly gosh. Car boot give us a bell bits and hanky panky me old mucker fantastic in my flat so I said nice one he lost his bottle.</p>
             <div className="about-us-button-wrapper">
-                <Link to="/" className="about-us-button-style">View All Members<span className="arrow-style"><FaArrowRight /></span></Link>
+                    <Link className="secondary-btn " to="#">Learn More<span className="m-1"><FaArrowRight /></span></Link>
             </div>
             </div>
             </Col>

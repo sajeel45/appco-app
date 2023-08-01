@@ -22,7 +22,11 @@ const Blog1 = (props) => {
     </div>
       <Container>
         <Row>
+        <Col lg="4">
+            <SideBar />
+          </Col>
           <Col lg="8">
+            <div className="single-blog-item-wrapper">
             <div className="single-blog-image-wrapper">
               <img src={blog1} alt="blog-image" />
             </div>
@@ -113,10 +117,9 @@ const Blog1 = (props) => {
                 mobile app landscape.
               </p>
             </div>
+            </div>
           </Col>
-          <Col lg="4">
-            <SideBar />
-          </Col>
+          
         </Row>
       </Container>
     

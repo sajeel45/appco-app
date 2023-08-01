@@ -22,7 +22,7 @@ const ServiceDetails = (props) =>{
                                 <div className="service-page-item-icon-wrapper">
                                     <span>{item.icon}</span>
                                 </div>
-                                <div className="service-page-item-title-wrapper py-3">
+                                <div className="service-page-item-title-wrapper text-center py-3">
                                 <h2>{item.title}</h2>
                                 </div>
                                 <div className="service-page-item-description-wrapper text-center">

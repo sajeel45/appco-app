@@ -5,7 +5,7 @@ import "./Sponsors.css";
 const sponsors = (props) => {
   const sponsors = props.sponsors;
   return (
-    <div className="sponsors-wrapper">
+    <div className="sponsors-wrapper" style={{paddingTop:props.paddingTop}}>
       <Container>
         <Row className="justify-content-center">
           <Col lg="12" md="12" sm="12">

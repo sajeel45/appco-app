@@ -1,21 +1,24 @@
 import { useEffect } from "react";
 import Header from "../../common/Header/Header";
-import { helpLinks,addressInfo } from "../../../data/data";
-import Contact from "../../elements/Contact/Contact";
+import TeamPage from "../../elements/TeamPage/TeamPage";
+import Sponsors from "../../elements/Sponsors/Sponsors";
 import ContactForm from "../../elements/ContactForm/ContactForm";
 import Footer from "../../common/Footer/Footer";
+import {helpLinks,sponsors,teamMembers2,addressInfo} from "../../../data/data";
 
-const ContactPage = () =>{
+
+const TeamMembers = () => {
     useEffect(()=>{
         window.scrollTo(0,0);
     },[])
     return(
         <div>
             <Header />
-            <Contact />
+            <TeamPage teamMembers2={teamMembers2}/>
+            <Sponsors sponsors={sponsors}/>
             <ContactForm addressInfo={addressInfo} />
             <Footer helpLinks={helpLinks} />
         </div>
     )
 };
-export default ContactPage;
+export default TeamMembers;

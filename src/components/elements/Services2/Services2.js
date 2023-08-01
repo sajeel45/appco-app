@@ -5,7 +5,7 @@ import "./Services2.css";
 const Services2 = (props) => {
     const services = props.services2;
     return(
-        <div className="about-us-services-wrapper pt-5">
+        <div className="about-us-services-wrapper">
             <Container>
                 <Row>
                     <Col lg="12" md="12" sm="12">

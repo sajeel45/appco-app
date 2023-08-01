@@ -10,8 +10,14 @@
 .traffic-area-text-wrapper{
     padding-top: 35px;
 }
+.traffic-area-text-wrapper p{
+    font-size: 18px;
+}
 .traffic-item-text-wrapper{
     margin-left: 10px;
+}
+.traffic-item-text-wrapper p{
+    font-size: 18px;
 }
 .traffic-item-icon-wrapper{
     margin-top: 10px;
@@ -28,6 +34,7 @@
 }
 .traffic-item-wrapper{
     display: flex;
+    padding: 20px 0;
 }
 .secondary-btn{
     background: transparent;

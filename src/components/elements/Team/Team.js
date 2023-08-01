@@ -28,7 +28,7 @@ const Team = (props) => {
                             <div className="team-member-content-wrapper text-center pt-3">
                                 <h5>{item.name}</h5>
                                 <span>{item.designation}</span>
-                                <div className="team-member-social-links pt-5 pb-3">
+                                <div className="team-member-social-links pt-4 pb-4">
                                 <ul>
                                     <li><Link to="https://www.linkedin.com/in/muhammad-sajeel-34405b221/"><FaLinkedin color="white"/></Link></li>
                                     <li><Link to="#"><FaTwitter color="white"/></Link></li>

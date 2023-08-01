@@ -1,3 +1,4 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/Pages/Home/Home";
 import AboutUs from './components/Pages/AboutUs/AboutUs';
@@ -18,6 +19,8 @@ import TeamMember4 from './components/Pages/Team4/Team4';
 import BlogOne from './components/Pages/Blog1/BlogOne';
 import BlogTwo from './components/Pages/Blog2/BlogTwo';
 import BlogThree from './components/Pages/Blog3/BlogThree';
+import TeamMembers from './components/Pages/TeamMembers/TeamMembers';
+import Error from './components/Pages/Error/Error';
 
 function App() {
   const router = createBrowserRouter([
@@ -81,10 +84,20 @@ function App() {
       path:"/Blog3",
       element:<BlogThree />
     }
+    ,{
+      path:"/Team",
+      element:<TeamMembers />
+    },
+    {
+      path:"/*",
+      element:<Error />
+    }
   ])
   return (
     <div className="App">
+      <React.StrictMode>
         <RouterProvider router={router}/>
+        </React.StrictMode>
     </div>
   );
 }

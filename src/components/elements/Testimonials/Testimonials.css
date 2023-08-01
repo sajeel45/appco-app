@@ -1,3 +1,6 @@
+.testimonial-section-wrapper{
+    padding-bottom: 65px;
+}
 .testimonial-upper-content-wrapper{
     display: flex;
     flex-direction: column;
@@ -18,7 +21,9 @@
 .testimonial-wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
     padding: 20px;
     border: 1px solid #eee;
 }
@@ -26,7 +31,7 @@
     border-radius: 50%;
 }
 .testimonials-wrapper{
-    padding-top:100px;
+    padding-top:84px;
 }
 .testimonial-content-wrapper{
     padding-top: 50px;
@@ -40,4 +45,25 @@
 .testi-skill-wrapper span{
     color: #5653b1;
 
+}
+.slick-dots{
+    bottom: -70px;
+}
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    .testimonials-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    padding: 20px;
+    
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .testimonials-wrapper{
+        margin-right: 20px;
+    }
+    
 }
