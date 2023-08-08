@@ -34,7 +34,12 @@
 }
 .team-member-content-wrapper h5{
     font-weight: 700;
+}
+.team-member-content-wrapper a{
+    text-decoration: none;
+    
     color: white;
+
 }
 .team-member-content-wrapper span{
     color: white;

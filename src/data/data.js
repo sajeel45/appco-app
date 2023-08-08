@@ -131,25 +131,29 @@ const teamMembers = [
         id:1,
         src:team1,
         name:"Benjamin Evalent",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Benjamin"
     },
     {
         id:2,
         src:team2,
         name:"Ellen Erye",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Ellen"
     },
     {
         id:3,
         src:team3,
         name:"Bryan Gill",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Bryan"
     },
     {
         id:4,
         src:team4,
         name:"Amelia Harper",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Amelia"
     }
 ];
 const teamMembers2 = [
@@ -157,49 +161,57 @@ const teamMembers2 = [
         id:1,
         src:team1,
         name:"Benjamin Evalent",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Benjamin"
     },
     {
         id:2,
         src:team2,
         name:"Ellen Erye",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Ellen"
     },
     {
         id:3,
         src:team3,
         name:"Bryan Gill",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Bryan"
     },
     {
         id:4,
         src:team4,
         name:"Amelia Harper",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Amelia"
     },
     {
         id:5,
         src:team1,
         name:"Benjamin Evalent",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Benjamin"
     },
     {
         id:6,
         src:team2,
         name:"Ellen Erye",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Ellen"
     },
     {
         id:7,
         src:team3,
         name:"Bryan Gill",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Bryan"
     },
     {
         id:8,
         src:team4,
         name:"Amelia Harper",
-        designation:"CEO-Founder"
+        designation:"CEO-Founder",
+        link:"/Amelia"
     }
 ];
 const blogs = [

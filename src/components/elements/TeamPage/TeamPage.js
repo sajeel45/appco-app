@@ -34,24 +34,24 @@ const TeamPage = (props) => {
                     <div className="team-member-single-item-image-wrapper">
                       <img src={item.src} alt="tam-member" />
                     </div>
-                    <div className="team-member-single-content-wrapper text-center">
-                      <h5>{item.name}</h5>
+                    <div className="team-member-page-single-content-wrapper text-center">
+                      <Link to={item.link}><h5>{item.name}</h5></Link>
                       <span>{item.designation}</span>
                       <div className="team-member-single-social-links">
                         <ul>
                           <li>
                             <Link to="https://www.linkedin.com/in/muhammad-sajeel-34405b221/">
-                              <FaLinkedin color="white" />
+                              <FaLinkedin color="black" />
                             </Link>
                           </li>
                           <li>
                             <Link to="#">
-                              <FaTwitter color="white" />
+                              <FaTwitter color="black" />
                             </Link>
                           </li>
                           <li>
                             <Link to="#">
-                              <FaFacebook color="white" />
+                              <FaFacebook color="black" />
                             </Link>
                           </li>
                         </ul>

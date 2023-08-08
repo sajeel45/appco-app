@@ -21,7 +21,7 @@ const Contact = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <FaChevronRight color="white"/>
+                    <FaChevronRight color="white" />
                   </li>
                   <li>Contact Us</li>
                 </ul>

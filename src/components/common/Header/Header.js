@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../../assets/logo/logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -7,8 +7,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Header.css";
 import { NavLink } from "react-bootstrap";
-
-
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,67 +40,116 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto nav-dropdown-link">
-                  <NavLink href="#"  className="nav-link">
-                      <Link to="/" className="nav-link-style">Home</Link>
-                    </NavLink >
-                    <NavLink href="#"  className="nav-link">
-                      <Link to="/AboutUs" className="nav-link-style">About</Link>
-                    </NavLink >
-                    <NavLink className="nav-link">
-                      <Link to="/Services" className="nav-link-style">Services</Link>
+                    <NavLink href="#" className="nav-link">
+                      <Link to="/" className="nav-link-style">
+                        Home
+                      </Link>
+                    </NavLink>
+                    <NavLink href="#" className="nav-link">
+                      <Link to="/AboutUs" className="nav-link-style">
+                        About
+                      </Link>
                     </NavLink>
                     <NavLink className="nav-link">
-                    <Link to="/Features" className="nav-link-style">
-                      Features
-                    </Link>
+                      <Link to="/Services" className="nav-link-style">
+                        Services
+                      </Link>
                     </NavLink>
-                    <NavDropdown title="Team" id="basic-nav-dropdown" as="li">
-                    <NavDropdown.Item href="#home1" className="nav-link">
-                        <Link to="/Team" className="nav-link-style nav-link"><span>Our Dedicated Team</span></Link>
+                    <NavLink className="nav-link">
+                      <Link to="/Features" className="nav-link-style">
+                        Features
+                      </Link>
+                    </NavLink>
+                    <NavDropdown title="Team" id="basic-nav-dropdown" as="li" renderMenuOnMount="true">
+                      <NavDropdown.Item href="#home1" className="nav-link">
+                        <Link to="/Team" className="nav-link-style nav-link">
+                          <span>Our Dedicated Team</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#home1" className="nav-link">
-                        <Link to="/Benjamin" className="nav-link-style nav-link"><span>Benjamin Evalent</span></Link>
+                        <Link
+                          to="/Benjamin"
+                          className="nav-link-style nav-link"
+                        >
+                          <span>Benjamin Evalent</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#home2" className="nav-link">
-                        <Link to="/Ellen" className="nav-link-style nav-link"><span>Ellen Erye</span></Link>
+                        <Link to="/Ellen" className="nav-link-style nav-link">
+                          <span>Ellen Erye</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item className="nav-link">
-                      <Link to="/Bryan" className="nav-link-style nav-link"><span>Bryan Gill</span></Link>
+                        <Link to="/Bryan" className="nav-link-style nav-link">
+                          <span>Bryan Gill</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#home4" className="nav-link">
-                      <Link to="/Amelia" className="nav-link-style nav-link"><span>Amelia Harper</span></Link>
+                        <Link to="/Amelia" className="nav-link-style nav-link">
+                          <span>Amelia Harper</span>
+                        </Link>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavLink className="nav-link">
-                      <Link to="/Pricing" className="nav-link-style">Pricing</Link>
+                      <Link to="/Pricing" className="nav-link-style">
+                        Pricing
+                      </Link>
                     </NavLink>
-                    <NavDropdown title="Pages" as="li" id="basic-nav-dropdown">
-                      <NavDropdown.Item >
-                        <Link to="/AboutUs" className="nav-link nav-link-style"><span>About Us</span></Link>
+                    <NavDropdown title="Pages" as="li" id="basic-nav-dropdown" renderMenuOnMount="true">
+                      <NavDropdown.Item>
+                        <Link to="/AboutUs" className="nav-link nav-link-style">
+                          <span>About Us</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                      <Link to="/Services" className="nav-link nav-link-style"><span>Services</span></Link>
+                        <Link
+                          to="/Services"
+                          className="nav-link nav-link-style"
+                        >
+                          <span>Services</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                      <Link to="/Features" className="nav-link nav-link-style"><span>Features</span></Link>
+                        <Link
+                          to="/Features"
+                          className="nav-link nav-link-style"
+                        >
+                          <span>Features</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                      <Link to="/Pricing" className="nav-link nav-link-style"><span>Pricing</span></Link>
+                        <Link to="/Pricing" className="nav-link nav-link-style">
+                          <span>Pricing</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                      <Link to="/error" className="nav-link nav-link-style"><span>404 Page</span></Link>
+                        <Link to="/error" className="nav-link nav-link-style">
+                          <span>404 Page</span>
+                        </Link>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown title="Blogs" as="li" id="basic-nav-dropdown">
+                    <NavDropdown title="Blogs" as="li" id="basic-nav-dropdown" renderMenuOnMount="true">
                       <NavDropdown.Item href="#blog1" className="nav-link">
-                        <Link to="/twoColumn" className="nav-link nav-link-style"><span>2 Column Layout</span></Link>
+                        <Link
+                          to="/twoColumn"
+                          className="nav-link nav-link-style"
+                        >
+                          <span>2 Column Layout</span>
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#Page2" className="nav-link">
-                        <Link to="/threeColumn" className="nav-link nav-link-style"><span>3 Column Layout</span></Link>
+                        <Link
+                          to="/threeColumn"
+                          className="nav-link nav-link-style"
+                        >
+                          <span>3 Column Layout</span>
+                        </Link>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavLink className="nav-item-link">
-                      <Link to="/Contact" className="nav-link-style">Contact</Link>
+                      <Link to="/Contact" className="nav-link-style">
+                        Contact
+                      </Link>
                       <p></p>
                     </NavLink>
                   </Nav>

@@ -14,7 +14,7 @@ const TeamMember2  = () => {
         <div>
             <Header />
             <Team2 />
-            <Sponsors sponsors={sponsors} />
+            <Sponsors sponsors={sponsors} paddingTop="72px"/>
             <ContactForm addressInfo={addressInfo}/>
             <Footer helpLinks={helpLinks}/>
         </div>

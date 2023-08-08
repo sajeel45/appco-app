@@ -20,6 +20,8 @@
 }
 .call-to-action-button{
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 .call-to-action-button a{
     background-color: #5653b1;

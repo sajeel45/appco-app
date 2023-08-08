@@ -25,23 +25,25 @@ const feedback = (props) => {
           <Slider {...settings}>
             {feedbacks.map((item, index) => (
               <Col key={index}>
-                
                 <div className="feedback-wrapper">
-                
                   <div className="user-image-wrapper">
                     <img src={item.img} alt="user-image" />
                   </div>
                   <div className="feedback-content-wrapper">
-                  <Container>
-                    <h5 className="pb-3">{item.name}</h5>
-                    <span className="date-styling pb-3">{item.date}</span>
-                    <p className="pb-3">{item.feedback}</p>
-                    <span><FaStar color="yellow"/><FaStar color="yellow"/><FaStar color="yellow"/><FaStar color="yellow"/><FaStar color="yellow"/></span>
+                    <Container>
+                      <h5 className="pb-3">{item.name}</h5>
+                      <span className="date-styling pb-3">{item.date}</span>
+                      <p className="pb-3">{item.feedback}</p>
+                      <span>
+                        <FaStar color="yellow" />
+                        <FaStar color="yellow" />
+                        <FaStar color="yellow" />
+                        <FaStar color="yellow" />
+                        <FaStar color="yellow" />
+                      </span>
                     </Container>
                   </div>
-                  
                 </div>
-                
               </Col>
             ))}
           </Slider>

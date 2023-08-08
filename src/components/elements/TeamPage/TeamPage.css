@@ -40,10 +40,17 @@
     color: white;
     text-decoration: none;
 }
-.team-member-single-content-wrapper{
+.team-member-page-single-content-wrapper{
     border: 1px solid lightgrey;
     padding: 10px 0;
     width: 270px;
+}
+.team-member-page-single-content-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.team-member-page-single-content-wrapper h5{
+    font-weight: 700;
 }
 .team-members-page-section-wrapper{
     padding: 100px 0 41px;
@@ -66,12 +73,8 @@
     margin-right: 5px;
 }
 .team-member-single-social-links ul li a{
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 50%;
-    background-color: #1f3654;
     padding: 10px;
     transition: all 0.5s ease-out 0s ;
-}
-.team-member-single-social-links ul li a:hover{
-    background: linear-gradient(220deg, #533efe, #740fd6);
 }

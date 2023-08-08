@@ -58,17 +58,17 @@ const SideBar = () => {
         <div className="purple-bar mt-2"></div>
         <div className="side-bar-about-content">
           <p>
-            At Appico, we are passionate about helping app
-            developers and businesses unlock the full potential of their mobile
-            applications. With our in-depth expertise in mobile app
-            monetization, we aim to provide valuable insights and strategies to
-            maximize app revenue. Our team of industry experts has curated a
-            comprehensive guide on "17 Effective Ways to Monetize Mobile Apps,"
-            offering actionable tips and innovative approaches to boost your
-            app's profitability. Whether you're a startup or an established
-            company, our goal is to empower you with the knowledge and tools
-            needed to thrive in the competitive app market. Join us on this
-            monetization journey and take your app's earnings to new heights.
+            At Appico, we are passionate about helping app developers and
+            businesses unlock the full potential of their mobile applications.
+            With our in-depth expertise in mobile app monetization, we aim to
+            provide valuable insights and strategies to maximize app revenue.
+            Our team of industry experts has curated a comprehensive guide on
+            "17 Effective Ways to Monetize Mobile Apps," offering actionable
+            tips and innovative approaches to boost your app's profitability.
+            Whether you're a startup or an established company, our goal is to
+            empower you with the knowledge and tools needed to thrive in the
+            competitive app market. Join us on this monetization journey and
+            take your app's earnings to new heights.
           </p>
         </div>
       </div>

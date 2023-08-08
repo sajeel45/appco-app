@@ -26,7 +26,7 @@ const Team = (props) => {
                                 <img src={item.src} alt="teamMember"/>
                             </div>
                             <div className="team-member-content-wrapper text-center pt-3">
-                                <h5>{item.name}</h5>
+                                <Link to={item.link}><h5>{item.name}</h5></Link>
                                 <span>{item.designation}</span>
                                 <div className="team-member-social-links pt-4 pb-4">
                                 <ul>

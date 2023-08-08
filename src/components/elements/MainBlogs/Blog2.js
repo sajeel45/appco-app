@@ -10,17 +10,25 @@ const Blog2 = (props) => {
   const recentBlogs = props.recentBlogs2;
   return (
     <>
-    <div className="single-blog-wrapper text-center" style={{backgroundImage:`url(${pagebg})`}}>
-    <h3>How to bring Dolce to your company?</h3>
-    <ul>
-      <li><Link to="/twoColumn">Blogs</Link></li>
-      <li><FaChevronRight color="white"/></li>
-      <li>Blog 2</li>
-    </ul>
-    </div>
+      <div
+        className="single-blog-wrapper text-center"
+        style={{ backgroundImage: `url(${pagebg})` }}
+      >
+        <h3>How to bring Dolce to your company?</h3>
+        <ul>
+          <li>
+            <Link to="/twoColumn">Blogs</Link>
+          </li>
+          <li>
+            <FaChevronRight color="white" />
+          </li>
+          <li>Blog 2</li>
+        </ul>
+      </div>
       <Container>
         <Row>
           <Col lg="8">
+          <div className="single-blog-item-wrapper">
             <div className="single-blog-image-wrapper">
               <img src={blog2} alt="blog-image" />
             </div>
@@ -111,13 +119,13 @@ const Blog2 = (props) => {
                 mobile app landscape.
               </p>
             </div>
+            </div>
           </Col>
           <Col lg="4">
             <SideBar2 />
           </Col>
         </Row>
       </Container>
-    
     </>
   );
 };

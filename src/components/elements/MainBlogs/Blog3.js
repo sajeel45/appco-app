@@ -9,17 +9,25 @@ import SideBar3 from "../SideBar3/SideBar3";
 const Blog3 = () => {
   return (
     <>
-    <div className="single-blog-wrapper text-center" style={{backgroundImage:`url(${pagebg})`}}>
-    <h3>Introducing New Apps Design for our iOS App</h3>
-    <ul>
-      <li><Link to="/twoColumn">Blogs</Link></li>
-      <li><FaChevronRight color="white"/></li>
-      <li>Blog 3</li>
-    </ul>
+      <div
+        className="single-blog-wrapper text-center"
+        style={{ backgroundImage: `url(${pagebg})` }}
+      >
+        <h3>Introducing New Apps Design for our iOS App</h3>
+        <ul>
+          <li>
+            <Link to="/twoColumn">Blogs</Link>
+          </li>
+          <li>
+            <FaChevronRight color="white" />
+          </li>
+          <li>Blog 3</li>
+        </ul>
       </div>
       <Container>
         <Row>
           <Col lg="8">
+          <div className="single-blog-item-wrapper">
             <div className="single-blog-image-wrapper">
               <img src={blog3} alt="blog-image" />
             </div>
@@ -110,13 +118,14 @@ const Blog3 = () => {
                 mobile app landscape.
               </p>
             </div>
+            </div>
           </Col>
           <Col lg="4">
             <SideBar3 />
           </Col>
         </Row>
       </Container>
-      </>
+    </>
   );
 };
 
