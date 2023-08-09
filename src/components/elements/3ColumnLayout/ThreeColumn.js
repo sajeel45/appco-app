@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import blog1 from "../../../assets/blogs/blog-2.jpg";
 import blog2 from "../../../assets/blogs/blog-3.jpg";
+import blog3 from "../../../assets/blogs/blog-1.jpg";
 import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaArrowRight } from "react-icons/fa";
@@ -11,7 +13,7 @@ const blogItems = [
     src: blog1,
     meta1: "Saas & App",
     meta2: "April 14,2022",
-    title: "Introducing New Apps Design for our iOS App",
+    title: "17 Effective Ways to Monetize Mobile Apps",
     link: "/Blog1",
   },
   {
@@ -19,7 +21,56 @@ const blogItems = [
     src: blog2,
     meta1: "Saas & App",
     meta2: "April 14,2022",
+    title: "How to bring Dolce to your company",
+    link: "/Blog2",
+  },
+  {
+    id: 13,
+    src: blog3,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
     title: "Introducing New Apps Design for our iOS App",
+    link: "/Blog3",
+  },
+  {
+    id: 14,
+    src: blog1,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "17 Effective Ways to Monetize Mobile Apps",
+    link: "/Blog1",
+  },
+  {
+    id: 15,
+    src: blog2,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "How to bring Dolce to your company",
+    link: "/Blog2",
+  },
+  {
+    id: 16,
+    src: blog3,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "Introducing New Apps Design for our iOS App",
+    link: "/Blog3",
+  },
+  {
+    id: 17,
+    src: blog1,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "17 Effective Ways to Monetize Mobile Apps",
+    link: "/Blog1",
+  },
+
+  {
+    id: 18,
+    src: blog2,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "How to bring Dolce to your company",
     link: "/Blog2",
   },
 ];
@@ -28,6 +79,24 @@ const ThreeColumn = (props) => {
   const previousBlogs = twoBlogs.slice(0, 10);
   const newBlogs = previousBlogs.concat(blogItems);
   console.log(newBlogs);
+
+  const blogsPerPage = 9;
+
+  const [currentPage , setCurrentPage] = useState(1);
+
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = newBlogs.slice(indexOfFirstBlog,indexOfLastBlog);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+
+
+
+
+
   return (
     <div className="three-column-page-wrapper">
       <div
@@ -49,7 +118,7 @@ const ThreeColumn = (props) => {
       </div>
       <Container>
         <Row className="mt-5">
-          {newBlogs.map((item, index) => (
+          {currentBlogs.map((item, index) => (
             <Col lg="4" md="6" sm="12">
               <div className="three-column-blogs-wrapper" key={index}>
                 <div className="three-column-blog-wrapper">
@@ -82,6 +151,17 @@ const ThreeColumn = (props) => {
               </div>
             </Col>
           ))}
+          <div className="pagination">
+            {Array.from({ length: Math.ceil(twoBlogs.length / blogsPerPage) }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => handlePageChange(index + 1)}
+            className={currentPage === index + 1 ? 'active page-btn-style' : 'page-btn-style'}
+          >
+            {index + 1}
+          </button>
+        ))}
+        </div>
         </Row>
       </Container>
     </div>

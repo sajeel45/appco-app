@@ -593,6 +593,86 @@ const twoBlogs = [
     description:
       "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
   },
+  {
+    id: 11,
+    src: blog1,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "17 Effective Ways to Monetize Mobile Apps",
+    description:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+    link: "/Blog1",
+  },
+  {
+    id: 12,
+    src: blog2,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "How to bring Dolce to your company",
+    description:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+    link: "/Blog2",
+  },
+  {
+    id: 13,
+    src: blog3,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "Introducing New Apps Design for our iOS App",
+    description:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+    link: "/Blog3",
+  },
+  {
+    id: 14,
+    src: blog1,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "17 Effective Ways to Monetize Mobile Apps",
+    link: "/Blog1",
+    description:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+  },
+  {
+    id: 15,
+    src: blog2,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "How to bring Dolce to your company",
+    link: "/Blog2",
+    description:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+  },
+  {
+    id: 16,
+    src: blog3,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "Introducing New Apps Design for our iOS App",
+    link: "/Blog3",
+    description:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+  },
+  {
+    id: 17,
+    src: blog1,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "17 Effective Ways to Monetize Mobile Apps",
+    link: "/Blog1",
+    description:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+  },
+  {
+    id: 18,
+    src: blog2,
+    meta1: "Saas & App",
+    meta2: "April 14,2022",
+    title: "How to bring Dolce to your company",
+    link: "/Blog2",
+    description:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of …",
+  },
 ];
 const servicesItems = [
   {

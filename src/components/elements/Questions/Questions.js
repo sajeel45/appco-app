@@ -22,7 +22,7 @@ const Questions = (props) => {
             </div>
           </Col>
           </Row>
-            {questions.map((item, index) => (
+            
                 <div className="faq-wrapper">
                 <Accordion
                   className="questions-section-main-wrapper"
@@ -32,6 +32,7 @@ const Questions = (props) => {
                     animateIn="animate__fadeIn"
                     animateOnce="true"
                   >
+                    {questions.map((item, index) => (
                     <Accordion.Item
                       className="questions-content-wrapper"
                       eventKey={index.toString()}
@@ -43,10 +44,11 @@ const Questions = (props) => {
                         <p>{item.answer}</p>
                       </Accordion.Body>
                     </Accordion.Item>
+                     ))}
                   </AnimationOnScroll>
                 </Accordion>
                 </div>
-            ))}
+           
       </Container>
     </section>
   );

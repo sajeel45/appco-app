@@ -1,13 +1,23 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useEffect, useState } from "react";
-import ReactPaginate from "react-paginate";
+import { useState } from "react";
 import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaArrowRight } from "react-icons/fa";
 import "./twoColumn.css";
 
-const twoColumn = (props) => {
+const TwoColumn = (props) => {
   const twoBlogs = props.twoBlogs;
+  const blogsPerPage = 6;
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = twoBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <div className="two-column-blogs-wrapper">
       <div
@@ -29,7 +39,7 @@ const twoColumn = (props) => {
       </div>
       <Container>
         <Row className="align-content-center mt-5">
-          {twoBlogs.map((item, index) => (
+          {currentBlogs.map((item, index) => (
             <Col lg="6" md="6" sm="12">
               <div className="two-column-blogs-wrapper" key={index}>
                 <div className="two-column-blog-wrapper">
@@ -51,7 +61,7 @@ const twoColumn = (props) => {
                     <p>{item.description}</p>
                     <div className="read-more-button">
                       <Link to={item.link}>
-                        Read More{" "}
+                        Read More
                         <span>
                           <FaArrowRight color="black" />
                         </span>
@@ -60,11 +70,23 @@ const twoColumn = (props) => {
                   </div>
                 </div>
               </div>
+              
             </Col>
           ))}
+          <div className="pagination">
+            {Array.from({ length: Math.ceil(twoBlogs.length / blogsPerPage) }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => handlePageChange(index + 1)}
+            className={currentPage === index + 1 ? 'active page-btn-style' : 'page-btn-style'}
+          >
+            {index + 1}
+          </button>
+        ))}
+          </div>
         </Row>
       </Container>
     </div>
   );
 };
-export default twoColumn;
+export default TwoColumn;
