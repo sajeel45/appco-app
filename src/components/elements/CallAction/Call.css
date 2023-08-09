@@ -1,12 +1,15 @@
 .call-to-action-wrapper{
-    background-color: #111A3ABF;
-    opacity: 1;
-    padding: 100px 0;
+    padding: 50px 0 0 0;
+    
+}
+.call-to-action-section-wrapper{
+    border-radius: 10px;
 }
 .call-to-action-content-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 50px;
 }
 .call-to-action-content-wrapper h2{
     color: #fff;
@@ -23,17 +26,35 @@
     display: flex;
     justify-content: center;
 }
+.cta-achievements-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+.cta-single-achievement-wrapper{
+    color: white;
+}
+.cta-single-achievement-wrapper span{
+    font-weight: 700;
+    font-size: 34px;
+}
 .call-to-action-button a{
-    background-color: #5653b1;
+    background-color: #1E105A;
     padding: 15px 25px;
-    
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: 700;
 }
 .call-to-action-button a:hover{
     color: #5653b1;
     background-color: white;
+    font-weight: 700;
 }
-.call-to-action-button a{
-    text-decoration: none;
-    color: white;
-    text-align: center;
+.cta-thumb-wrapper{
+    padding: 50px 0;
 }
+.cta-thumb{
+    padding: 0 70px;
+}
+

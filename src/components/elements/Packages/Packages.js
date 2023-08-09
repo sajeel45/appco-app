@@ -73,7 +73,7 @@ const packages = (props) => {
                         </div>
                       </div>
                       <div className="package-button-wrapper">
-                        <Link className="main-btn" href="#">
+                        <Link className="pkg-btn" href="#">
                           Purchase Now
                         </Link>
                       </div>

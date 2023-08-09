@@ -1,31 +1,56 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import callThumb from "../../../assets/call/cta-bg.jpg";
+import funfact from "../../../assets/servicePage/fun-fact-thumb.png";
 import "./Call.css";
 
 const Call = (props) => {
   return (
-    <div className="call-to-action-wrapper" style={{ margin: props.margin }}>
+    <div style={{ margin: props.margin,}}>
       <Container>
+        <div className="call-to-action-section-wrapper" style={{backgroundImage:`url(${callThumb})` }}>
         <Row>
-          <Col lg="12">
+          <Col lg="6" >
+            <div className="call-to-action-wrapper">
             <div className="call-to-action-content-wrapper text-center">
               <h2>
-                We Deliver Solution with the Goal of
-                <br />A Trusting Relationships
+                Get Started With 
+                <br />Appico Template
               </h2>
               <p>
                 Appropriate for your specific business, making it easy for you
                 to have quality IT services.
               </p>
               </div>
-              </Col>
-              <Col lg="12">
-              <div className="call-to-action-button">
-                <Link to="/LearnMore">Learn More</Link>
+              <div className="cta-achievements-wrapper">
+                <div className="cta-single-achievement-wrapper">
+                  <span>700K</span>
+                  <p>App Downloads</p>
+                </div>
+                <div className="cta-single-achievement-wrapper">
+                <span>476+</span>
+                  <p>Average Review</p>
+                </div>
+                <div className="cta-single-achievement-wrapper">
+                <span>30M</span>
+                  <p>Active Users</p>
+                </div>
               </div>
-              </Col>            
+              </div>
+              </Col>
+              <Col lg="6">
+                <div className="cta-thumb-wrapper">
+                  <div className="cta-thumb">
+                    <img src={funfact} alt="fun-fact-thumb"/>
+                  </div>
+                  <div className="call-to-action-button">
+                <Link to="/Contact">Get Started</Link>
+              </div>
+              </div>
+                </Col>            
           
         </Row>
+        </div>
       </Container>
     </div>
   );

@@ -1,7 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
-import pagetitlebg from "../../../assets/servicePage/page-title-bg.jpg";
-import featuresImg from "../../../assets/featuresPage/fun-fact-thumb.png";
+import { FaChevronRight } from "react-icons/fa";
+import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
 import "./FeaturesPage.css";
+import { Link } from "react-router-dom";
 
 const FeaturesPage = () => {
   return (
@@ -11,17 +12,19 @@ const FeaturesPage = () => {
     >
       <Container>
         <Row>
-          <Col lg="7" md="7" sm="12">
+          <Col lg="12" md="12" sm="12">
             <div className="features-page-content">
               <span>Amazing and Exciting Features</span>
               <h3>
                 Experience Amazing Features <br /> in Our Application!
               </h3>
-            </div>
-          </Col>
-          <Col lg="5" md="5" sm="12">
-            <div className="features-page-thumb-wrapper">
-              <img src={featuresImg} alt="thumb" />
+              <div className="features-breadcrumbs">
+                <ul>
+                  <li><Link to="/">Home</Link></li>
+                  <li><FaChevronRight color="white"/></li>
+                  <li>Features</li>
+                </ul>
+              </div>
             </div>
           </Col>
         </Row>

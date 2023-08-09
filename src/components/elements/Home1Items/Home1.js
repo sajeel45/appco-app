@@ -7,6 +7,8 @@ import {
   blogs,
   packages,
   questions,
+  features1,
+  features2
 } from "../../../data/data";
 import Banner from "../Banner/Banner";
 import Services from "../Services/Services";
@@ -24,7 +26,7 @@ const Home1 = () => {
     <div>
       <Banner bannerItems={bannerItems} />
       <Services services={services} />
-      <Features />
+      <Features features1={features1} features2={features2}/>
       <Traffic trafficItems={trafficItems} />
       <Feedback feedbacks={feedbacks} />
       <Team teamMembers={teamMembers} />

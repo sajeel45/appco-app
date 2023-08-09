@@ -9,7 +9,7 @@ const Services2 = (props) => {
             <Container>
                 <Row>
                     <Col lg="12" md="12" sm="12">
-                        <div className="about-us-services-content-wrapper">
+                        <div className="about-us-services-content-wrapper text-center">
                         <h3>We're driven by our values</h3>
                         <p>The app provides design and digital marketing. </p>
                         </div>

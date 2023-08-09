@@ -1,6 +1,4 @@
-.two-column-blogs-wrapper{
-    margin-top: 50px;
-}
+
 .two-column-thumb-wrapper{
     background-size: cover;
     background-position: center center;
@@ -30,6 +28,9 @@
 }
 .blog-content-wrapper p{
     padding-left: 5px;
+}
+.two-column-blog-wrapper{
+    margin-bottom: 50px;
 }
 .two-column-heading ul{
     display: flex;

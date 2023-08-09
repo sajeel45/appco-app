@@ -1,68 +1,16 @@
 .features-wrapper{
-    padding: 100px 0;
+    padding: 64px 0;
     max-width: 100%;
 }
-.features-text-wrapper{
-    padding-top: 200px;
-    margin-left: 100px;
+.single-feature-wrapper{
+    display: flex;
 }
-.features-text-wrapper a{
-    text-decoration: none;
-    
-}
-.features-text-wrapper .nav-link{
-    color: #5653b1;
-}
-.features-text-wrapper span{
-    color: #5653b1;
-}
-.features-text-wrapper h3{
-    font-weight: 700;
-    font-size: 30px;
-}
-.main-btn{
-    display: inline-block;
-    font-weight: 500;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid #5653b1;
-    padding: 0 30px;
-    font-size: 15px;
-    line-height: 45px;
-    border-radius: 6px;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.4s ease-out 0s;
-    background-color:#5653b1;
-}
-.main-btn:hover{
-    background-color: #fff;
-    color: #5653b1;
-}
-.feature-icon{
-    padding: 5px 5px 5px 8px;
-    width: 35px;
-    height: 35px;
-    background: #5653b1;
-    display: inline-block;
+.feature-icon-wrapper span{
+    background-color:#7a86df62;
     border-radius: 50%;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding: 10px;
 }
-.features-wrapper .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background: transparent;
-    color: #5653b1;
-}
-.nav-link-wrapper .active{
-    border-right:2px solid #5653b1;
-    border-radius: 0px;
-}
-.features-link{
-    text-decoration: none;
-    color: #5653b1;
+.feature-title-wrapper span{
+    font-weight: 700;
+
 }

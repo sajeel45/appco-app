@@ -1,5 +1,4 @@
 import { Container, Row, Col, Form } from "react-bootstrap";
-import { FaGlobe, FaEnvelope, FaPhone } from "react-icons/fa";
 import "./ContactForm.css";
 import { Link } from "react-router-dom";
 

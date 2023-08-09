@@ -8,14 +8,15 @@
 }
 .testimonial-upper-content-wrapper h3{
     font-weight: 900;
-    font-size: 44px;
+    font-size:34px;
+    margin-bottom: 0;
 }
 .testimonial-upper-content-wrapper h2{
     font-weight: 900;
-    font-size: 44px;
+    font-size: 34px;
 }
 .testimonial-upper-content-wrapper h2 span{
-    font-size: 44px;
+    font-size: 34px;
     color: #5653b1;
 }
 .testimonial-wrapper{
@@ -31,7 +32,7 @@
     border-radius: 50%;
 }
 .testimonials-wrapper{
-    padding-top:84px;
+    padding-top:40px;
 }
 .testimonial-content-wrapper{
     padding-top: 50px;

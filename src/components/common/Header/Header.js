@@ -26,13 +26,15 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className={`header-wrapper${isScrolled ? " scrolled" : ""}`}>
+    <header className={`header-wrapper${isScrolled ? " scrolled" : ""}`}>
       <Container>
         <Row>
           <Col sm="12" lg="4" md="6">
+            <div className="header-logo">
             <Link to="/" className="logo-link">
-              <img src={logo} alt="logo" className="img-fluid mt-20" />
+              <img src={logo} alt="logo" className="img-fluid" />
             </Link>
+            </div>
           </Col>
           <Col className="header-nav-wrapper" md="6" sm="6" lg="8">
             <div className="nav-items-wrapper">
@@ -159,7 +161,7 @@ const Header = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </header>
   );
 };
 export default Header;

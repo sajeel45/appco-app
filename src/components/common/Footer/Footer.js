@@ -7,7 +7,7 @@ import "./Footer.css";
 const footer = (props) => {
   const helpLinks = props.helpLinks;
   return (
-    <div className="footer-section-wrapper" style={{ marginTop: props.margin }}>
+    <footer className="footer-section-wrapper" style={{ marginTop: props.margin }}>
       <Container>
         <div className="footer-section-main-wrapper">
           <Row>
@@ -125,7 +125,7 @@ const footer = (props) => {
           </Row>
         </div>
       </Container>
-    </div>
+    </footer>
   );
 };
 export default footer;

@@ -12,6 +12,9 @@
 .questions-content-wrapper{
     padding: 0 30px;
 }
+.question-wrapper{
+    padding: 5px 0;
+}
 .questions-heading-wrapper h3{
     font-weight: 900;
     font-size: 44px;
@@ -48,9 +51,7 @@
     color: #5653b1;
     margin-bottom: 0;
 }
-.answer-wrapper{
-    border-top: 1px solid rgba(0, 0, 0, 0.219);
-}
+
 .answer-wrapper p{
     font-size: 18px;
     line-height: 28px;

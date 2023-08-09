@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { FaQuestion, FaQuestionCircle } from "react-icons/fa";
 import faqShape from "../../../assets/questions/faq-shape.png";
@@ -20,13 +21,12 @@ const Questions = (props) => {
               <p>Different layouts and styles for team sections.</p>
             </div>
           </Col>
-          <Row>
+          </Row>
             {questions.map((item, index) => (
-              <Col lg="12" md="12" sm="12">
                 <div className="faq-wrapper">
                 <Accordion
                   className="questions-section-main-wrapper"
-                  defaultActiveKey={0}
+                  defaultActiveKey="0"
                 >
                   <AnimationOnScroll
                     animateIn="animate__fadeIn"
@@ -34,7 +34,7 @@ const Questions = (props) => {
                   >
                     <Accordion.Item
                       className="questions-content-wrapper"
-                      eventKey="0"
+                      eventKey={index.toString()}
                     >
                       <Accordion.Header className="question-wrapper">
                         <h4>{item.question}</h4>
@@ -46,11 +46,7 @@ const Questions = (props) => {
                   </AnimationOnScroll>
                 </Accordion>
                 </div>
-              </Col>
-              
             ))}
-          </Row>
-        </Row>
       </Container>
     </section>
   );

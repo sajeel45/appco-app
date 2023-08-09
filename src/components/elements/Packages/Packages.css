@@ -54,12 +54,15 @@
 .package-image-wrapper img{
     width: 50px;
 }
-.package-button-wrapper a.main-btn{
+.package-button-wrapper a.pkg-btn{
     margin-top: 15px;
-    padding: 2px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
+}
+.package-button-wrapper{
+    padding: 10px 0;
 }
 .normal-package .package-button-wrapper a{
     background-color: #fff;
@@ -80,7 +83,7 @@
     
 
 }
-.center-package .package-button-wrapper a:hover{
+.center-package .package-button-wrapper a{
     background-color: #5653b1;
-    color: #fff;
+    color: white;
 }

@@ -55,7 +55,6 @@
     padding: 10px;
     border: 1px solid white;
     background-color: #1f3654;
-    transition: all 3s ease-out 0s;
     border-radius: 50%;
 }
 .team-member-social-links ul li a:hover{

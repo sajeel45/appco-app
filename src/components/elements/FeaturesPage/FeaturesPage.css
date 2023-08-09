@@ -2,8 +2,21 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 100px 0;
     max-width: 100%;
+    position: relative;
+}
+.features-page-wrapper::before{
+    background: rgba(0,0,0,.52);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+}
+.features-page-content{
+    position: relative;
 }
 .features-page-content h3{
     color: white;
@@ -15,4 +28,18 @@
 }
 .features-page-content{
     padding: 100px 0;
+}
+.features-breadcrumbs ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.features-breadcrumbs ul li{
+    color: white;
+    list-style: none;
+    margin-right: 5px;
+}
+.features-breadcrumbs ul li a{
+    color: white;
+    text-decoration: none;
 }

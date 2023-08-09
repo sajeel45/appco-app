@@ -11,7 +11,9 @@ const Home = () =>{
     return(
         <div>
             <Header />
+            <main>
             <Home1 />
+            </main>
             <Footer helpLinks={helpLinks}/>
         </div>
     )

@@ -39,7 +39,7 @@ const trafficArea = (props) => {
                   <span style={{ marginRight: "5px" }}>
                     <FaArrowRight />
                   </span>
-                  Learn More{" "}
+                  Learn More
                 </Link>
               </Col>
             </Row>

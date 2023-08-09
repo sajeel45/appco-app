@@ -43,7 +43,6 @@
 .team-member-page-single-content-wrapper{
     border: 1px solid lightgrey;
     padding: 10px 0;
-    width: 270px;
 }
 .team-member-page-single-content-wrapper a{
     text-decoration: none;
@@ -56,21 +55,19 @@
     padding: 100px 0 41px;
 }
 .team-member-single-social-links{
-    padding: 20px 0;
+    padding: 25px 0;
 }
 .team-member-single-item-wrapper{
     margin-bottom: 50px;
-    width: 270px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .team-member-single-social-links ul{
     display: flex;
-    justify-content: center;
-    padding: 0;
+    justify-content: space-between;
+    padding: 0 50px;
 }
 .team-member-single-social-links ul li{
     list-style: none;
-    margin-right: 5px;
 }
 .team-member-single-social-links ul li a{
     border: 1px solid black;
