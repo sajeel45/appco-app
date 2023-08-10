@@ -14,9 +14,27 @@ const TwoColumn = (props) => {
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = twoBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
 
+  const pageCount = Math.ceil(twoBlogs.length / blogsPerPage);
+
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
+
+  const handlePrevClick = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNextClick = () => {
+    if (currentPage < pageCount) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+
+
+  
 
   return (
     <div className="two-column-blogs-wrapper">
@@ -74,7 +92,10 @@ const TwoColumn = (props) => {
             </Col>
           ))}
           <div className="pagination">
-            {Array.from({ length: Math.ceil(twoBlogs.length / blogsPerPage) }, (_, index) => (
+          <button onClick={handlePrevClick} disabled={currentPage === 1} className="page-btn-style">
+          Previous
+        </button>
+            {Array.from({ length: pageCount }, (_, index) => (
           <button
             key={index}
             onClick={() => handlePageChange(index + 1)}
@@ -82,7 +103,11 @@ const TwoColumn = (props) => {
           >
             {index + 1}
           </button>
+          
         ))}
+        <button onClick={handleNextClick} disabled={currentPage === pageCount} className="page-btn-style">
+          Next
+        </button>
           </div>
         </Row>
       </Container>
