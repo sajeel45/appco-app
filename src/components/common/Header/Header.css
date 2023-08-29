@@ -12,9 +12,21 @@
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.0588235294);
 }
 .header-logo{
-    padding: 15px 0 10px 0;
+    padding: 0 0 10px 0;
 }
-
+.header-logo img{
+    width: 150px;
+    height: auto;
+}
+.header-nav-wrapper{
+    padding-top: 10px;
+}
+/* .logo-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+} */
 .nav-link-style{
     color: black;
     text-decoration: none ;

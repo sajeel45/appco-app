@@ -15,7 +15,7 @@ const footer = (props) => {
               <Row>
                 <Col lg="4">
                   <div className="info-wrapper">
-                    <div className="footer-logo-wrappe">
+                    <div className="footer-logo-wrapper">
                       <img src={logo} alt="footer-logo" />
                     </div>
                     <div className="info-description-wrapper">

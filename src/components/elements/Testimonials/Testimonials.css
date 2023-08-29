@@ -30,6 +30,7 @@
 }
 .testimonial-image-wrapper img{
     border-radius: 50%;
+    width: 100px;
 }
 .testimonials-wrapper{
     padding-top:40px;

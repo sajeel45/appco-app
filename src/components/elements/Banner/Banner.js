@@ -1,26 +1,16 @@
 import heroThumb from "../../../assets/Banner/hero-thumb-1.png";
-import heroThumb2 from "../../../assets/Banner/hero-thumb-2.png";
-import Slider from "react-slick";
+import heroThumb2 from "../../../assets/Banner/hero-thumb-2.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Banner.css";
 
 const Banner = (props) => {
-  var settings = {
-    arrows: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3500,
-  };
-  const bannerImages = props.bannerItems;
   return (
     <div className="banner-wrapper">
       <Container>
         <Row className="align-items-center justify-content-space-between">
-          <Col lg="7" md="6" sm="6">
+          <Col lg="6" md="6" sm="6">
             <div className="banner-text-wrap">
               <div className="banner-upper-text-wrapper">
                 <h4>Secure & IT Services</h4>
@@ -38,7 +28,7 @@ const Banner = (props) => {
               </div>
             </div>
           </Col>
-          <Col lg="5" md="6" sm="6">
+          <Col lg="6" md="6" sm="6">
             <div className="hero-thumbs-wrapper">
               <div className="hero-thumb">
                 <img src={heroThumb} alt="heroThumb" />

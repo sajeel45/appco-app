@@ -12,7 +12,7 @@ const Team1 = () => {
       
     >
         <div className="team-member-name text-center" style={{ backgroundImage: `url(${background})` }}> 
-              <h2>Benjamin Element</h2>
+              <h2>Benjamin Evalent</h2>
             </div>
       <Container>
         <Row>

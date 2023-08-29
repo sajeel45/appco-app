@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import callThumb from "../../../assets/call/cta-bg.jpg";
-import funfact from "../../../assets/servicePage/fun-fact-thumb.png";
+import funfact from "../../../assets/call/fun-fact-thumb.jpg";
 import "./Call.css";
 
 const Call = (props) => {

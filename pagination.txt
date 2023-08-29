@@ -1,0 +1,38 @@
+function BlogSection({ twoBlogs }) {
+  const blogsPerPage = 6; // Number of blogs per page
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Calculate the indexes for the current page
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = twoBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+
+  // Handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  return (
+    <div>
+      {/* Your existing code */}
+      {currentBlogs.map((item, index) => (
+        // ... (your blog item rendering code)
+      ))}
+
+      {/* Pagination controls */}
+      <div className="pagination">
+        {Array.from({ length: Math.ceil(twoBlogs.length / blogsPerPage) }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => handlePageChange(index + 1)}
+            className={currentPage === index + 1 ? 'active' : ''}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default BlogSection;
