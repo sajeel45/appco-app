@@ -4,7 +4,6 @@ import { FaArrowRight } from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Link } from "react-router-dom";
 import "animate.css";
-import "./Traffic.css";
 
 const trafficArea = (props) => {
   const trafficItems = props.trafficItems;

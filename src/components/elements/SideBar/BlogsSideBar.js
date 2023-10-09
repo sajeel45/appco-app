@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { recentBlogs, tags, categories } from "../../../data/data";
 import { FaChevronRight } from "react-icons/fa";
-import "./BlogsSideBar.css";
 
 const SideBar = () => {
   return (

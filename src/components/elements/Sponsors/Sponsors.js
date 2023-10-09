@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 import sponsorShape from "../../../assets/sponsors/sponser-shape.png";
-import "./Sponsors.css";
 
 const sponsors = (props) => {
   const sponsors = props.sponsors;

@@ -1,6 +1,5 @@
 import { Container,Row,Col } from "react-bootstrap";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import "./ServiceDetails.css";
 
 const ServiceDetails = (props) =>{
     const servicesItems = props.servicesItems;

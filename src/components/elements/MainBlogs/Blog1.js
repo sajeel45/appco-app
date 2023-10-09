@@ -4,7 +4,6 @@ import pagebg from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import SideBar from "../SideBar/BlogsSideBar";
-import "./Blog1.css";
 
 const Blog1 = (props) => {
   const recentBlogs = props.recentBlogs;

@@ -3,7 +3,6 @@ import background from "../../../assets/contact/contact-thumb.jpg";
 import TeamMember from "../../../assets/team/team-3.jpg";
 import { Link } from "react-router-dom";
 import { FaTwitter,FaFacebook,FaLinkedin,FaYoutube } from "react-icons/fa";
-import "./Team3.css";
 
 
 const Team3 = () => {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaArrowRight } from "react-icons/fa";
-import "./twoColumn.css";
+
 
 const TwoColumn = (props) => {
   const twoBlogs = props.twoBlogs;

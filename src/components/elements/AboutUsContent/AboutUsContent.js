@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import AboutUsBg from "../../../assets/aboutpageContent/about-page-bg.jpg";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-import "./AboutUsContent.css";
 
 const AboutUsContent = () => {
   return (

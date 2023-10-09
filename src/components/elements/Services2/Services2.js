@@ -1,6 +1,5 @@
 import { Container,Row,Col } from "react-bootstrap";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import "./Services2.css";
 
 const Services2 = (props) => {
     const services = props.services2;

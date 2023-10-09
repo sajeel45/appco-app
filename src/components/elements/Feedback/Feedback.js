@@ -4,7 +4,9 @@ import feedbackBg from "../../../assets/feedback/feedback-bg.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Feedback.css";
+
+
+
 const feedback = (props) => {
   const feedbacks = props.feedbacks;
   var settings = {

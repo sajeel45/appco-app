@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import logo from "../../../assets/logo/logo.png";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaPinterest, FaLinkedin } from "react-icons/fa";
-import "./Footer.css";
 
 const footer = (props) => {
   const helpLinks = props.helpLinks;

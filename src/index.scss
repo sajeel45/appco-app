@@ -1,0 +1,50 @@
+
+@import "./App.scss";
+@import "./scss/Header.scss";
+@import "./scss/Footer.scss";
+@import "./scss/twoColumn.scss";
+@import "./scss//threeColumn.scss";
+@import "./scss/AboutUs.scss";
+@import "./scss/AboutUsContent.scss";
+@import "./scss/Achievements.scss";
+@import "./scss/Banner.scss";
+@import "./scss/Blogs.scss";
+@import "./scss/Call.scss";
+@import "./scss/Contact.scss";
+@import "./scss/ContactForm.scss";
+@import "./scss/Features.scss";
+@import "./scss/FeaturesPage.scss";
+@import "./scss/Feedback.scss";
+@import "./scss/BlogLayout.scss";
+@import "./scss/Packages.scss";
+@import "./scss/PricingPageContent.scss";
+@import "./scss/project.scss";
+@import "./scss/Questions.scss";
+@import "./scss//ServiceDetails.scss";
+@import "./scss/ServicePage.scss";
+@import "./scss/Services.scss";
+@import "./scss/Services2.scss";
+@import "./scss/BlogsSideBar.scss";
+@import "./scss/Sponsors.scss";
+@import "./scss/Team.scss";
+@import "./scss/Team1.scss";
+@import "./scss/TeamPage.scss";
+@import "./scss/Testimonials.scss";
+@import "./scss/Traffic.scss";
+
+
+
+span,p,a {
+  font-family: 'Noto Sans', sans-serif !important;
+  line-height: 1.6;
+  font-size: 16px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif !important;
+  line-height: 1.6;
+  font-size: 16px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}

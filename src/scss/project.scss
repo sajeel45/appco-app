@@ -20,12 +20,8 @@
 .project-section-content p{
     color: white;
 }
-.email-btn-syle{
-    width: 120px;
-    background-color: black;
-    color: white;
-}
-.email-btn-syle:hover{
+
+.project-btn:hover{
     background-color: black;
     color: white;
 }
@@ -35,7 +31,13 @@
 .project-thumb img{
     width: 100%;
 }
+.project-btn-container .project-btn{
+    background-color: black;
+}
 .project-btn-style{
+    width: 120px;
+    
+    color: white;
     text-decoration: none;
     color: white;
 }

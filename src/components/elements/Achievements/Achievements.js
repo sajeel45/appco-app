@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import CountUp from "react-countup";
 import counterThumb from "../../../assets/counter/counter-thumb.jpg";
-import "./Achievements.css";
 
 const Achievements = (props) => {
   const achievements = props.achievements;

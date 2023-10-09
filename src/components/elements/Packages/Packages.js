@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { FaDollarSign } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "./Packages.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const packages = (props) => {

@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import thumb from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight,FaLinkedin,FaFacebook,FaTwitter } from "react-icons/fa";
-import "./TeamPage.css";
 
 const TeamPage = (props) => {
   const teamMembers = props.teamMembers2;

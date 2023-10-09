@@ -2,7 +2,6 @@ import { Container,Row,Col } from "react-bootstrap";
 import background from "../../../assets/service/shape-1.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import 'animate.css';
-import "./Services.css";
 
 const services = (props) => {
     const services = props.services;

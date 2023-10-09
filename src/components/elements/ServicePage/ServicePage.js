@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import serviceThumb from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
-import "./ServicePage.css";
 
 const ServicePage = () => {
   return (

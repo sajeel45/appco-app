@@ -3,7 +3,6 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Link } from "react-router-dom";
 import featureThumb from "../../../assets/features/features-thumb-2.png";
 import "animate.css";
-import "./Features.css";
 
 const features = (props) => {
   const features1 = props.features1;

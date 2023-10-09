@@ -1,10 +1,7 @@
-import { useState } from "react";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
-import { FaQuestion, FaQuestionCircle } from "react-icons/fa";
 import faqShape from "../../../assets/questions/faq-shape.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
-import "./Questions.css";
 
 const Questions = (props) => {
   const questions = props.questions;

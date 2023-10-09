@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "./PricingPageContent.css";
 
 const PricingPageContent = () => {
   return (

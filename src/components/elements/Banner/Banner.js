@@ -3,7 +3,6 @@ import heroThumb2 from "../../../assets/Banner/hero-thumb-2.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col } from "react-bootstrap";
-import "./Banner.css";
 
 const Banner = (props) => {
   return (

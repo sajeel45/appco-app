@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaChevronRight } from "react-icons/fa";
 import contactThumb from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
-import "./Contact.css";
 
 const Contact = () => {
   return (

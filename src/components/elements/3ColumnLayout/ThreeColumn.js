@@ -6,7 +6,9 @@ import blog1 from "../../../assets/blogs/blog-1.jpg";
 import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaArrowRight } from "react-icons/fa";
-import "./ThreeColumn.css";
+
+
+
 const blogItems = [
   {
     id: 19,

@@ -3,7 +3,6 @@ import blog3 from "../../../assets/blogs/main-blog-3.jpg";
 import { Link } from "react-router-dom";
 import pagebg from "../../../assets/contact/contact-thumb.jpg";
 import { FaChevronRight } from "react-icons/fa";
-import "./Blog3.css";
 import SideBar3 from "../SideBar3/SideBar3";
 
 const Blog3 = () => {

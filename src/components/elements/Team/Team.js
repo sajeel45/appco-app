@@ -3,7 +3,6 @@ import {FaFacebook,FaLinkedin,FaTwitter} from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Link } from "react-router-dom";
 import "animate.css";
-import "./Team.css"
 
 const Team = (props) => {
     const teamMembers = props.teamMembers;

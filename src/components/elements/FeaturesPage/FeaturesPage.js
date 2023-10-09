@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { FaChevronRight } from "react-icons/fa";
 import pagetitlebg from "../../../assets/contact/contact-thumb.jpg";
-import "./FeaturesPage.css";
 import { Link } from "react-router-dom";
 
 const FeaturesPage = () => {
